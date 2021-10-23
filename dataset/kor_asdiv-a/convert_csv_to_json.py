@@ -1,11 +1,14 @@
 import pandas as pd
 import csv
 import json
+import re
 
 
 def place_numbers(text, numbers):
     for i, num in enumerate(numbers.split()):
-        text = text.replace(f'number{i}', num)
+        # text = text.replace(f'number{i}', f'NUM_{i}')
+        text = re.sub(f'[Nn]umber{i}', f'NUM_{i}', text)
+        # text = text.replace(f'number{i}', num)
     return text
 
 
