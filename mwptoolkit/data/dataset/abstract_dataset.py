@@ -94,7 +94,6 @@ class AbstractDataset(object):
         self.prompt = config['prompt']
         self.mapping = config['mapping']
         self.encode_type = config['encode_type']
-        self.test_dir = config['test_dir']
         self.max_span_size = 1
 
     def _load_dataset(self):
@@ -104,8 +103,6 @@ class AbstractDataset(object):
         if self.encode_type == 'seg':
             read_json_data = read_json_data_sig
         
-        if self.test_dir:
-            self.dataset_path=self.test_dir
             
         trainset_file = self.dataset_path + "/trainset.json"
         validset_file = self.dataset_path + "/validset.json"
@@ -167,8 +164,6 @@ class AbstractDataset(object):
         if self.encode_type == 'seg':
             read_json_data = read_json_data_sig
         
-        if self.test_dir:
-            self.dataset_path=self.test_dir
 
         trainset_file = self.dataset_path + "/trainset_fold{}.json".format(self.fold_t)
         testset_file = self.dataset_path + "/testset_fold{}.json".format(self.fold_t)
