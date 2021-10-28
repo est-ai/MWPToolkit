@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), ".")))
 def get_sheet2json_config():
 
     return EasyDict({"data_path":"/home/agc2021/dataset/problemsheet_5_00.json",
-              "eval_path":"./eval"})
+              "eval_path":"./eval/"})
 
 
 
@@ -37,8 +37,7 @@ def get_mwptoolkit_config():
                      "get_group_num":"pos",
                      "encode_type":"seg",
                      "rebuild":True,
-                     "prompt":True,
-                     "test_dir":"./eval"})
+                     "prompt":True})
 
 
 if __name__=="__main__":
