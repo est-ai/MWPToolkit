@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), ".")))
 
 
 def get_sheet2json_config():
-    return EasyDict({"data_path":"./agc2021/dataset/problemsheet.json",
+    return EasyDict({"data_path":"/home/agc2021/dataset/problemsheet_5_00.json",
               "eval_path":"./dataset/eval/"})
 
 
