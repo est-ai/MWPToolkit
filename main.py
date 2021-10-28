@@ -20,6 +20,7 @@ def get_sheet2json_config():
 def get_mwptoolkit_config():
     return EasyDict({"model":"Graph2Tree",
                      "dataset":"eval",
+                     "dataset_path":"./eval",
                      "task_type":"single_equation",
                      "gpu_id":0,
                      "equation_fix":"prefix",
