@@ -616,42 +616,47 @@ def deprel_tree_to_file_kor(train_datas, valid_datas, test_datas, tokenizer, par
     write_json_data(questions_infos, parse_tree_path)
 
 
-# +
 def get_token_info(dataset, dp, pos, tokenizer):
     questions_info = {}
+    dp_error_cnt = 0
     for data in dataset:
         question_list = []
         # question = tokenizer.convert_tokens_to_string(data["question"])
         # q, num_list = transfer_digit_to_num(question)   # input은 변경 가능
-        tr = group_sub_tokens(data["question"])
-#         dpr = dp(sentence_preprocess_dp(data['ques source 2']))
-        pr = group_pos(pos(data['ques source 1']))
-
+        if dp_error_cnt >= 50:
+            raise Exception("Dependency Parsing Error")
+        try:
+            tr = group_sub_tokens(data["question"])
+            dpr = dp(sentence_preprocess_dp(data['ques source 2']))
+            pr = group_pos(pos(data['ques source 1']))
+            a = int('')
+        except ValueError:
+            tr = group_sub_tokens(data["question"])
+            pr = group_pos(pos(data['ques source 1']))
+            dpr = get_dummy_dp(len(tr))
+            dp_error_cnt += 1
+            
         #잘못된 데이터 들어오면
-#         if len(tr) != len(dpr) or len(tr) != len(pr):
-#             print('grouping fail!')
-#             if len(tr) != len(dpr):
-#                 n = len(tr) - len(dpr)
-#                 dpr += dpr[-n:]
+        if len(tr) != len(dpr) or len(tr) != len(pr):
+            print('grouping fail!')
+            if len(tr) != len(dpr):
+                n = len(tr) - len(dpr)
+                dpr += dpr[-n:]
 
-#             if len(tr) != len(pr):
-#                 n = len(tr) - len(pr)
-#                 pr += pr[-n:]
-        if len(tr) != len(pr):
             if len(tr) != len(pr):
                 n = len(tr) - len(pr)
                 pr += pr[-n:]
+
                 
-#         for t_group, p_group, d_group in zip(tr, pr, dpr):
-        for t_group, p_group in zip(tr, pr):
+        for t_group, p_group, d_group in zip(tr, pr, dpr):
             for token in t_group:
                 question_info = {
                     'token': token[1],
                     'token_pos': token[0],
                     'pos': p_group[0][2],
-#                     'deprel': d_group[3],
-#                     'head': d_group[2],
-#                     'dep_pos': d_group[0],
+                    'deprel': d_group[3],
+                    'head': d_group[2],
+                    'dep_pos': d_group[0],
                 }
                 question_list.append(question_info)
 
@@ -660,7 +665,13 @@ def get_token_info(dataset, dp, pos, tokenizer):
     return questions_info
 
 
-# -
+def get_dummy_dp(total_len):
+    dpr = []
+    for i in range(1, total_len+1):
+        dpr.append([i, 'dummpy', i+1, 'NP'])
+    dpr[-1][2] = -1
+    return dpr
+
 
 def sentence_preprocess_dp(sentence):
     decimal = ['.', '?', '!', '~', ',', '`']
