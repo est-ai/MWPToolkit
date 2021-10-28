@@ -33,9 +33,9 @@ class KoreanRobertaDataset(PretrainDataset):
     def __init__(self, config):
         super().__init__(config)
         if config['tokenizer_path']:
-            self.tokenizer = BertTokenizer.from_pretrained(config['tokenizer_path'])
+            self.tokenizer = BertTokenizer.from_pretrained(config['tokenizer_path'], local_files_only=True)
         else:
-            self.tokenizer = BertTokenizer.from_pretrained(config['pretrained_model_path'])
+            self.tokenizer = BertTokenizer.from_pretrained(config['pretrained_model_path'], local_files_only=True)
         
 
         self.pre_mask = config['pre_mask']
