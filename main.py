@@ -11,8 +11,10 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), ".")))
 
 
 def get_sheet2json_config():
+
     return EasyDict({"data_path":"./agc2021/dataset/problemsheet.json",
               "eval_path":"./eval"})
+
 
 
 def get_mwptoolkit_config():
