@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), ".")))
 
 def get_sheet2json_config():
     return EasyDict({"data_path":"./agc2021/dataset/problemsheet.json",
-              "eval_path":"./dataset/eval/"})
+              "eval_path":"./eval"})
 
 
 def get_mwptoolkit_config():
@@ -34,14 +34,15 @@ def get_mwptoolkit_config():
                      "get_group_num":"pos",
                      "encode_type":"seg",
                      "rebuild":True,
-                     "prompt":True,})
+                     "prompt":True,
+                     "test_dir":"./eval"})
 
 
 if __name__=="__main__":
     
     pathlib.Path('./outputs').mkdir(parents=True, exist_ok=True) 
     sheet2json_args = get_sheet2json_config()
-    sheet2json_main(sheet2json_args)
+    sheet2json_main(sheet2json_args)    
     toolkit_args = get_mwptoolkit_config()
     run_toolkit(toolkit_args.model, toolkit_args.dataset, toolkit_args.task_type, toolkit_args)
     res2code_main()
