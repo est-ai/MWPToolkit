@@ -16,6 +16,7 @@ from transformers import RobertaTokenizer,BertTokenizer,AutoTokenizer
 from pororo import Pororo
 import stanza
 import pickle
+from collections import Counter
 
 
 from mwptoolkit.data.dataset.abstract_dataset import AbstractDataset
@@ -618,14 +619,23 @@ def deprel_tree_to_file_kor(train_datas, valid_datas, test_datas, tokenizer, par
 
 def get_token_info(dataset, dp, pos, tokenizer):
     questions_info = {}
+    c = Counter()
     for data in dataset:
         question_list = []
         # question = tokenizer.convert_tokens_to_string(data["question"])
         # q, num_list = transfer_digit_to_num(question)   # input은 변경 가능
-        tr = group_sub_tokens(data["question"])
-        dpr = dp(sentence_preprocess_dp(data['ques source 2']))
-        pr = group_pos(pos(data['ques source 1']))
+        try:
+            tr = group_sub_tokens(data["question"])
+            dpr = dp(sentence_preprocess_dp(data['ques source 2']))
+            pr = group_pos(pos(data['ques source 1']))
 
+        except ValueError as e:
+            c.update([str(e)])
+            tr = group_sub_tokens(data["question"])
+            pr = group_pos(pos(data['ques source 1']))
+            dpr = get_dummy_dp(len(tr))
+
+            
         #잘못된 데이터 들어오면
         if len(tr) != len(dpr) or len(tr) != len(pr):
             print('grouping fail!')
@@ -637,6 +647,7 @@ def get_token_info(dataset, dp, pos, tokenizer):
                 n = len(tr) - len(pr)
                 pr += pr[-n:]
 
+                
         for t_group, p_group, d_group in zip(tr, pr, dpr):
             for token in t_group:
                 question_info = {
@@ -652,6 +663,14 @@ def get_token_info(dataset, dp, pos, tokenizer):
         questions_info[str(data['id'])] = question_list
 
     return questions_info
+
+
+def get_dummy_dp(total_len):
+    dpr = []
+    for i in range(1, total_len+1):
+        dpr.append([i, 'dummpy', i+1, 'NP'])
+    dpr[-1][2] = -1
+    return dpr
 
 
 def sentence_preprocess_dp(sentence):
