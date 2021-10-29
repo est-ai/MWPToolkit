@@ -9,14 +9,17 @@ import copy
 import warnings
 from logging import getLogger
 import re
+import itertools
 from collections import OrderedDict
 
 import torch
-from transformers import RobertaTokenizer,BertTokenizer,AutoTokenizer
+from transformers import RobertaTokenizer,BertTokenizer,ElectraTokenizer,AutoTokenizer
 from pororo import Pororo
 import stanza
 import pickle
 from collections import Counter
+import random
+from tqdm import tqdm
 
 
 from mwptoolkit.data.dataset.abstract_dataset import AbstractDataset
@@ -31,15 +34,54 @@ from mwptoolkit.utils.utils import write_json_data, read_json_data, str2float, l
 
 
 class KoreanRobertaDataset(PretrainDataset):
+    def shake_token(self, data):
+        for it in data:
+            Question = it['Question']
+            ques_source_1 = it['ques source 1']
+            Equation = it['Equation']
+            entity_list = it['entity list']
+            question = it['question']
+            equation = it['equation']
+            number_list = it['number list']
+            infix_equation = it['infix equation']
+            template = it['template']
+
+            order = list(range(len(number_list)))
+            random.shuffle(order)
+            entity_order = list(range(len(entity_list)))
+            random.shuffle(entity_order)
+
+            number_tokens = {f'NUM_{from_}': f'NUM_{to}' for from_, to in enumerate(order)}
+            number_order = {from_: to for from_, to in enumerate(order)}
+            entity_tokens = {f'ETY_{from_}': f'ETY_{to}' for from_, to in enumerate(entity_order)}
+            entity_order = {from_: to for from_, to in enumerate(entity_order)}
+
+            rep = dict((re.escape(k), v) for k, v in itertools.chain(number_tokens.items(), entity_tokens.items())) 
+            pattern = re.compile("|".join(rep.keys()))
+
+            it['Question'] = pattern.sub(lambda m: rep[re.escape(m.group(0))], Question)
+            it['ques source 1'] = pattern.sub(lambda m: rep[re.escape(m.group(0))], ques_source_1)
+            it['Equation'] = pattern.sub(lambda m: rep[re.escape(m.group(0))], Equation)
+            it['question'] = [pattern.sub(lambda m: rep[re.escape(m.group(0))], it) for it in question]
+            it['equation'] = [pattern.sub(lambda m: rep[re.escape(m.group(0))], it) for it in equation]
+            it['number list'] = [number_list[number_order[i]] for i in range(len(number_list))]
+            it['entity list'] = [entity_list[entity_order[i]] for i in range(len(entity_list))]
+            it['infix equation'] = [pattern.sub(lambda m: rep[re.escape(m.group(0))], it) for it in infix_equation]
+            it['template'] = [pattern.sub(lambda m: rep[re.escape(m.group(0))], it) for it in template]
+            
     def __init__(self, config):
         super().__init__(config)
+        tokenizer_cls_table = {
+            'ko-roberta': BertTokenizer,
+            'koelectra': ElectraTokenizer,
+        }
+        tokenizer_cls = tokenizer_cls_table[self.embedding]
         if config['tokenizer_path']:
             self.tokenizer = BertTokenizer.from_pretrained(config['tokenizer_path'], local_files_only=True)
         else:
             self.tokenizer = BertTokenizer.from_pretrained(config['pretrained_model_path'], local_files_only=True)
         
 
-        self.pre_mask = config['pre_mask']
         additional_mask_symbols = {self.mask_symbol, self.pre_mask}
         if MaskSymbol.NUM in additional_mask_symbols:
             self.tokenizer.add_special_tokens(dict(additional_special_tokens=['NUM']))
@@ -47,6 +89,11 @@ class KoreanRobertaDataset(PretrainDataset):
             self.tokenizer.add_special_tokens(dict(additional_special_tokens=NumMask.alphabet))
         if MaskSymbol.number in additional_mask_symbols:
             self.tokenizer.add_special_tokens(dict(additional_special_tokens=NumMask.number))
+            
+        if self.mask_entity:
+            self.tokenizer.add_special_tokens(dict(additional_special_tokens=NumMask.entity))
+            
+        
 
         func_group_num_table = {
             'dep': get_group_num_by_dep,
@@ -55,18 +102,45 @@ class KoreanRobertaDataset(PretrainDataset):
         self.get_group_num = func_group_num_table[config['get_group_num']]
 
     def _preprocess(self):
-        if self.dataset in ['kor_asdiv-a', DatasetName.hmwp]:
+        logger = getLogger()
+        if self.mask_entity:
+            # if os.path.isfile('tmp_dataset.pkl'):
+            #     logger.info('loading pre-masked entity data...')
+            #     with open('tmp_dataset.pkl', 'rb') as f:
+            #         self.trainset, self.validset, self.testset = pickle.load(f)
+            # else:
+            for it in tqdm(self.trainset):
+                it['Question'], it['entity list'] = tag_entity(it['Question'])
+            for it in tqdm(self.validset):
+                it['Question'], it['entity list'] = tag_entity(it['Question'])
+            for it in tqdm(self.testset):
+                it['Question'], it['entity list'] = tag_entity(it['Question'])
+            logger.info('saving pre-masked entity data...')
+            with open('tmp_dataset.pkl', 'wb') as f:
+                pickle.dump([self.trainset, self.validset, self.testset], f)
+                
+        if self.dataset in ['kor_asdiv-a', 'kor_di_asdiv-a', DatasetName.hmwp]:
             self.trainset, self.validset, self.testset = id_reedit(self.trainset, self.validset, self.testset, id_key='ID')
         transfer = number_transfer_kor
 
-        self.trainset, generate_list, train_copy_nums, unk_symbol = transfer(self.trainset, self.dataset,
-                                                                             self.task_type, self.mask_symbol,
-                                                                             self.min_generate_keep, self.tokenizer,
-                                                                             self.pre_mask, ";")
-        self.validset, _g, valid_copy_nums, _ = transfer(self.validset, self.dataset, self.task_type, self.mask_symbol,
-                                                         self.min_generate_keep, self.tokenizer, self.pre_mask, ";")
-        self.testset, _g, test_copy_nums, _ = transfer(self.testset, self.dataset, self.task_type, self.mask_symbol,
-                                                       self.min_generate_keep, self.tokenizer, self.pre_mask, ";")
+        if self.mask_entity:
+            self.trainset, generate_list, train_copy_nums, train_copy_etys, unk_symbol = transfer(self.trainset, self.dataset,
+                                                                                 self.task_type, self.mask_symbol,
+                                                                                 self.min_generate_keep, self.tokenizer,
+                                                                                 self.pre_mask, self.mask_entity, ";")
+            self.validset, _g, valid_copy_nums, valid_copy_etys, _ = transfer(self.validset, self.dataset, self.task_type, self.mask_symbol,
+                                                             self.min_generate_keep, self.tokenizer, self.pre_mask, self.mask_entity, ";")
+            self.testset, _g, test_copy_nums, test_copy_etys, _ = transfer(self.testset, self.dataset, self.task_type, self.mask_symbol,
+                                                           self.min_generate_keep, self.tokenizer, self.pre_mask, self.mask_entity, ";")
+        else:            
+            self.trainset, generate_list, train_copy_nums, unk_symbol = transfer(self.trainset, self.dataset,
+                                                                                 self.task_type, self.mask_symbol,
+                                                                                 self.min_generate_keep, self.tokenizer,
+                                                                                 self.pre_mask, self.mask_entity, ";")
+            self.validset, _g, valid_copy_nums, _ = transfer(self.validset, self.dataset, self.task_type, self.mask_symbol,
+                                                             self.min_generate_keep, self.tokenizer, self.pre_mask, self.mask_entity, ";")
+            self.testset, _g, test_copy_nums, _ = transfer(self.testset, self.dataset, self.task_type, self.mask_symbol,
+                                                           self.min_generate_keep, self.tokenizer, self.pre_mask, self.mask_entity, ";")
 
         target_equation_fix = self.equation_fix if self.equation_fix else FixType.Infix
         source_equation_fix = self.source_equation_fix if self.source_equation_fix else FixType.Infix
@@ -115,8 +189,12 @@ class KoreanRobertaDataset(PretrainDataset):
         self.generate_list = unk_symbol + generate_list
         if self.symbol_for_tree:
             self.copy_nums = max([train_copy_nums, valid_copy_nums, test_copy_nums])
+            if self.mask_entity:
+                self.copy_etys = max([train_copy_etys, valid_copy_etys, test_copy_etys])
         else:
             self.copy_nums = train_copy_nums
+            if self.mask_entity:
+                self.copy_etys = train_copy_etys
         if self.task_type == TaskType.SingleEquation:
             self.operator_list = copy.deepcopy(Operators.Single)
         elif self.task_type == TaskType.MultiEquation:
@@ -182,12 +260,16 @@ class KoreanRobertaDataset(PretrainDataset):
                 logger.info("read deprel tree infomation from {} ...".format(self.parse_tree_path))
                 self.trainset, self.validset, self.testset = \
                     get_group_nums_kor(self.get_group_num, self.trainset, self.validset, self.testset, self.parse_tree_path)
+                self.trainset, self.validset, self.testset = \
+                    deprel_to_graph_kor(self.trainset, self.validset, self.testset, self.parse_tree_path)
             else:
                 logger = getLogger()
                 logger.info("build deprel tree infomation to {} ...".format(self.parse_tree_path))
-                deprel_tree_to_file_kor(self.trainset, self.validset, self.testset, self.tokenizer, self.parse_tree_path)
+                self.trainset, self.validset, self.testset = deprel_tree_to_file_kor(self.trainset, self.validset, self.testset, self.tokenizer, self.parse_tree_path)
                 self.trainset, self.validset, self.testset = \
                     get_group_nums_kor(self.get_group_num, self.trainset, self.validset, self.testset, self.parse_tree_path)
+                self.trainset, self.validset, self.testset = \
+                    deprel_to_graph_kor(self.trainset, self.validset, self.testset, self.parse_tree_path)
 
 
     def _build_vocab(self):
@@ -227,7 +309,7 @@ class KoreanRobertaDataset(PretrainDataset):
             self.temp_symbol2idx[symbol] = idx
 
 
-def number_transfer_kor(datas, dataset_name, task_type, mask_type, min_generate_keep, tokenizer, pre_mask, equ_split_symbol=';'):
+def number_transfer_kor(datas, dataset_name, task_type, mask_type, min_generate_keep, tokenizer, pre_mask, mask_entity, equ_split_symbol=';'):
     """number transfer
 
     Args:
@@ -248,58 +330,77 @@ def number_transfer_kor(datas, dataset_name, task_type, mask_type, min_generate_
     generate_nums = []
     generate_nums_dict = {}
     copy_nums = 0
+    if mask_entity:
+        copy_etys = 0
     processed_datas = []
     unk_symbol = []
+    
+    new_datas = []
     for data in datas:
-        if task_type == TaskType.SingleEquation:
-            new_data = transfer(data, tokenizer, mask_type, pre_mask)
-        elif task_type == TaskType.MultiEquation:
-            new_data = transfer(data, tokenizer, mask_type, pre_mask, equ_split_symbol)
-        else:
-            raise NotImplementedError
-        if dataset_name == DatasetName.mawps_single and task_type == TaskType.SingleEquation and '=' in new_data["equation"]:
+        try:
+            if task_type == TaskType.SingleEquation:
+                new_data = transfer(data, tokenizer, mask_type, pre_mask, mask_entity=mask_entity)
+            elif task_type == TaskType.MultiEquation:
+                new_data = transfer(data, tokenizer, mask_type, pre_mask, equ_split_symbol)
+            else:
+                raise NotImplementedError
+            if dataset_name == DatasetName.mawps_single and task_type == TaskType.SingleEquation and '=' in new_data["equation"]:
+                continue
+            num_list = new_data["number list"]
+            out_seq = new_data["equation"]
+            copy_num = len(new_data["number list"])
+            if mask_entity:
+                copy_ety = len(new_data["entity list"])
+
+            for idx, s in enumerate(out_seq):
+                # tag the num which is generated
+                if s[0] == '-' and len(s) >= 2 and s[1].isdigit() and s not in generate_nums and s not in num_list:
+                    generate_nums.append(s)
+                    generate_nums_dict[s] = 0
+                if s[0].isdigit() and s not in generate_nums and s not in num_list:
+                    generate_nums.append(s)
+                    generate_nums_dict[s] = 0
+                if s in generate_nums and s not in num_list:
+                    generate_nums_dict[s] = generate_nums_dict[s] + 1
+
+            if copy_num > copy_nums:
+                copy_nums = copy_num
+
+            if mask_entity and copy_ety > copy_etys:
+                copy_etys = copy_ety
+
+            # get unknown number
+            if task_type == TaskType.SingleEquation:
+                pass
+            elif task_type == TaskType.MultiEquation:
+                for s in out_seq:
+                    if len(s) == 1 and s.isalpha():
+                        if s in unk_symbol:
+                            continue
+                        else:
+                            unk_symbol.append(s)
+            else:
+                raise NotImplementedError
+
+            processed_datas.append(new_data)
+        except Exception as e:
             continue
-        num_list = new_data["number list"]
-        out_seq = new_data["equation"]
-        copy_num = len(new_data["number list"])
-
-        for idx, s in enumerate(out_seq):
-            # tag the num which is generated
-            if s[0] == '-' and len(s) >= 2 and s[1].isdigit() and s not in generate_nums and s not in num_list:
-                generate_nums.append(s)
-                generate_nums_dict[s] = 0
-            if s[0].isdigit() and s not in generate_nums and s not in num_list:
-                generate_nums.append(s)
-                generate_nums_dict[s] = 0
-            if s in generate_nums and s not in num_list:
-                generate_nums_dict[s] = generate_nums_dict[s] + 1
-
-        if copy_num > copy_nums:
-            copy_nums = copy_num
-
-        # get unknown number
-        if task_type == TaskType.SingleEquation:
-            pass
-        elif task_type == TaskType.MultiEquation:
-            for s in out_seq:
-                if len(s) == 1 and s.isalpha():
-                    if s in unk_symbol:
-                        continue
-                    else:
-                        unk_symbol.append(s)
-        else:
-            raise NotImplementedError
-
-        processed_datas.append(new_data)
+        new_datas.append(data)
+        
+    datas = new_datas
+            
     # keep generate number
     generate_number = []
     for g in generate_nums:
         if generate_nums_dict[g] >= min_generate_keep:
             generate_number.append(g)
+    
+    if mask_entity:
+        return processed_datas, generate_number, copy_nums, copy_etys, unk_symbol
     return processed_datas, generate_number, copy_nums, unk_symbol
 
 
-def _num_transfer_kor(data, tokenizer, mask_type, pre_mask):
+def _num_transfer_kor(data, tokenizer, mask_type, pre_mask, mask_entity=False):
     pattern = re.compile("\d*\(\d+/\d+\)\d*|\d+\.\d+%?|\d+%?")
 
     num_list = data['Numbers'].split() if pre_mask is not None else []
@@ -324,6 +425,11 @@ def _num_transfer_kor(data, tokenizer, mask_type, pre_mask):
     else:
         input_seq, num_list, num_pos, all_pos, nums, num_pos_dict, nums_for_ques, nums_fraction = get_num_pos(input_seq, mask_type, pattern)
 
+    if mask_entity:
+        ety_list = data['entity list']
+        # print(get_ety_pos_pre_masked(input_seq, ety_list))
+        input_seq, ety_list, ety_pos, ety_all_pos, etys, ety_pos_dict, etys_for_ques = get_ety_pos_pre_masked(input_seq, ety_list)
+        
     # out_seq = seg_and_tag_svamp(equations, nums_fraction, nums)
     out_seq = equations.split()
 
@@ -335,6 +441,15 @@ def _num_transfer_kor(data, tokenizer, mask_type, pre_mask):
                 break
         num = str(str2float(num_str))
         source[pos] = num
+
+    if mask_entity:
+        for pos in ety_all_pos:
+            for key, value in ety_pos_dict.items():
+                if pos in value:
+                    ety_str = key
+                    break
+            source[pos] = ety_str
+        
     source2 = tokenizer.convert_tokens_to_string(source)
     source = tokenizer.convert_tokens_to_string(input_seq)
     # source = ' '.join(source)
@@ -347,6 +462,8 @@ def _num_transfer_kor(data, tokenizer, mask_type, pre_mask):
     new_data["equation"] = out_seq
     new_data["number list"] = num_list
     new_data["number position"] = num_pos
+    if mask_entity:
+        new_data["entity position"] = ety_pos
     new_data["id"] = str(data["ID"])
     new_data["ans"] = data["Answer"]
     return new_data
@@ -445,6 +562,56 @@ def _num_transfer_transformer(data, tokenizer, mask_type, pre_mask='NUM'):
     new_data["ans"] = data["Answer"]
     return new_data
 
+def get_ety_pos_pre_masked(input_seq, ety_list):
+    sent_mask_list = NumMask.entity
+    equ_mask_list = NumMask.entity
+        
+    pattern = re.compile(r'ETY_([0-9]+)')
+    
+    etys = OrderedDict()
+    ety_pos = []
+    ety_pos_dict = {}
+
+    for word_pos, word in enumerate(input_seq):
+        pos = re.search(pattern, word)
+        if pos and pos.start() == 0:
+            ety_idx = int(pos.groups()[0])
+            word = ety_list[ety_idx]
+            if word in ety_pos_dict:
+                ety_pos_dict[word].append(word_pos)
+            else:
+                # num_list.append(word)
+                ety_pos_dict[word] = [word_pos]
+                
+    # num_list = sorted(num_list, key=lambda x: max(num_pos_dict[x]), reverse=False)
+    etys = lists2dict(ety_list, equ_mask_list[:len(ety_list)])
+
+    etys_for_ques = lists2dict(ety_list, sent_mask_list[:len(ety_list)])
+
+    # all number position
+    all_pos = []
+    
+    for ety, mask in etys_for_ques.items():
+        if ety in ety_pos_dict:
+            for pos in ety_pos_dict[ety]:
+                all_pos.append(pos)
+
+    # final numbor position
+    final_pos = []
+    for ety in ety_list:
+        if ety not in ety_pos_dict:
+            continue
+        final_pos.append(max(ety_pos_dict[ety]))
+
+    # number transform
+    for ety, mask in etys_for_ques.items():
+        if ety in ety_pos_dict:
+            for pos in ety_pos_dict[ety]:
+                input_seq[pos] = mask
+        else:
+            print(ety, ety_list, ety_pos_dict, input_seq)
+
+    return input_seq, ety_list, final_pos, all_pos, etys, ety_pos_dict, etys_for_ques
 
 def get_num_pos_pre_masked(input_seq, num_list, mask_type, pre_mask):
     if pre_mask == MaskSymbol.NUM:
@@ -541,6 +708,7 @@ def get_num_pos_pre_masked(input_seq, num_list, mask_type, pre_mask):
                 input_seq[pos] = mask
         else:
             print(num, num_list, num_pos_dict, input_seq)
+            raise ValueError(f'missing masking on {input_seq}')
 
     nums_fraction = []
     for num, mask in nums.items():
@@ -569,6 +737,12 @@ def is_num_token(group, token):
            (len(group) > 1 and group[-2][1] == 'NUM' and group[-1][1] == '_' and str.isdecimal(token))
 
 
+def is_ety_token(group, token):
+    return (token == 'ETY') or \
+           (len(group) > 0 and group[-1][1] == 'ETY' and token == '_') or \
+           (len(group) > 1 and group[-2][1] == 'ETY' and group[-1][1] == '_' and str.isdecimal(token))
+
+
 def group_sub_tokens(tokens):
     token_group = []
     group = []
@@ -592,7 +766,8 @@ def group_pos(pos_list):
         if p in {'SPACE', 'SC', 'SY', 'SF', 'SP', 'SSO', 'SSC', 'SE', 'SO'} \
                 and not is_float_form(group, t) \
                 and not is_special_token(group, t) \
-                and not is_num_token(group, t):
+                and not is_num_token(group, t) \
+                and not is_ety_token(group, t):
             if len(group) > 0:
                 pos_group.append(group)
             if p != 'SPACE':
@@ -602,7 +777,21 @@ def group_pos(pos_list):
         group.append((i,) + pos)
     if len(group) > 0:
         pos_group.append(group)
-    return pos_group
+
+    unit_set = {'㎖', 'ℓ', 'g', '㎏', 't', '㎜', '㎝', 'm', '㎞', '㎟', '㎠', '㎡', '㎢', '㎣', '㎤', '㎥', '㎦'}
+    is_unit = False
+    new_pos_group = []
+    for x in pos_group:
+        if x[0][1] in unit_set:
+            is_unit = True
+            new_pos_group.append(x)
+        elif is_unit and x[0][2] not in {'SC', 'SY', 'SF', 'SP', 'SSO', 'SSC', 'SE', 'SO'}:
+            # TODO: not perfectly resolve grouping failure
+            is_unit = False
+            new_pos_group[-1] = new_pos_group[-1] + x
+        else:
+            new_pos_group.append(x)
+    return new_pos_group
 
 
 def deprel_tree_to_file_kor(train_datas, valid_datas, test_datas, tokenizer, parse_tree_path):
@@ -610,16 +799,20 @@ def deprel_tree_to_file_kor(train_datas, valid_datas, test_datas, tokenizer, par
     dp = Pororo(task="dep_parse", lang="ko")
     pos = Pororo(task='pos', lang='ko')
     # print("dataset length , ", len(train_datas), len(valid_datas), len(test_datas))
-    questions_infos['trainset'] = get_token_info(train_datas, dp, pos, tokenizer)
-    questions_infos['validset'] = get_token_info(valid_datas, dp, pos, tokenizer)
-    questions_infos['testset'] = get_token_info(test_datas, dp, pos, tokenizer)
+    questions_infos['trainset'], train_datas = get_token_info(train_datas, dp, pos, tokenizer, 'train')
+    questions_infos['validset'], valid_datas = get_token_info(valid_datas, dp, pos, tokenizer, 'valid')
+    questions_infos['testset'], test_datas = get_token_info(test_datas, dp, pos, tokenizer, 'test')
 
     write_json_data(questions_infos, parse_tree_path)
+    
+    return train_datas, valid_datas, test_datas
 
-
-def get_token_info(dataset, dp, pos, tokenizer):
+import json
+def get_token_info(dataset, dp, pos, tokenizer, type_='train'):
     questions_info = {}
     c = Counter()
+    
+    new_data = []
     for data in dataset:
         question_list = []
         # question = tokenizer.convert_tokens_to_string(data["question"])
@@ -720,6 +913,8 @@ def get_group_num_by_pos(dataset, q_info):
         for token_npos in num_pos:
             group_num = []
             start = max([x for x in sent_start_pos if x < token_npos])
+            if [x for x in sent_end_pos if x > token_npos] == []:
+                breakpoint()
             end = min([x for x in sent_end_pos if x > token_npos])
             se_pos_set[(start, end)] = True
             for token in info[start+1:end]:
@@ -791,6 +986,37 @@ def get_group_num_by_dep(dataset, q_info):
                     group_num += dep_pos[npos+1]
             group_nums.append(group_num)
         data["group nums"] = group_nums
+    return dataset
+
+
+def deprel_to_graph_kor(train_datas, valid_datas, test_datas, path):
+    q_infos = read_json_data(path)
+    trainset = deprel_to_graph(train_datas, q_infos['trainset'])
+    validset = deprel_to_graph(valid_datas, q_infos['validset'])
+    testset = deprel_to_graph(test_datas, q_infos['testset'])
+    return trainset, validset, testset
+
+
+def deprel_to_graph(dataset, q_info):
+    for data in dataset:
+        question_id = str(data["id"])
+        info = q_info[question_id]
+
+        dep_graphs = {}
+        dep_pos, dep_info, dep_head = get_dprel_info(info)
+
+        heading_idx = [x[0] for x in dep_pos]
+        for t_group in dep_pos:
+            head = t_group[0]
+            for x in t_group[1:]:
+                dep_graphs[x] = head
+
+        for token_idx, head_group in zip(heading_idx, dep_head):
+            if head_group < 0:
+                continue
+            dep_graphs[token_idx] = head_group - 1
+
+        data["dep graph"] = {k: dep_graphs[k] for k in sorted(list(dep_graphs.keys()))}
     return dataset
 
 
@@ -873,3 +1099,48 @@ def kor_deprel_tree_to_file_(train_datas, valid_datas, test_datas, path, languag
         token_list = pororo_pipeline(data["ques source 2"], data["ques source 1"], dp, pos, lemma, template_nlp)
         new_datas.append({'id': data['id'], 'deprel': token_list})
     write_json_data(new_datas, path)
+
+
+def truncate_person_postfix(person):
+    if person.endswith('이'):
+        return person[:-1]
+    return person
+
+
+ner = Pororo(task='ner', lang='ko')
+token_pattern = re.compile(r'[_A-Z0-9]')
+def tag_entity(question):
+    n = ner(question, num_workers=5)
+    
+    res = []
+    ignore_tag = ['O', 'QUANTITY', 'DATE', 'TERM', 'TIME']
+    for w in n:
+        if w[1] in ignore_tag:
+            continue
+            
+        if w[1] == 'PERSON':
+            w = (truncate_person_postfix(w[0]), w[1])
+            
+        if w[1] == 'ARTIFACT' and w[0].startswith('NUM'):
+            continue
+            
+        if token_pattern.search(w[0]) is not None:
+            continue
+            
+        if ' ' in w[0]:
+            continue
+            
+        res.append(w[0])
+            
+    entities = sorted(list(set(res)), key=len, reverse=True)
+    
+    ret_entities = []
+    pivot = 0
+    for idx, entity in enumerate(entities):
+        if entity in question:
+            question = question.replace(entity, f'ETY_{pivot}')
+            ret_entities.append(entity)
+            pivot += 1
+        
+    return question, ret_entities
+
