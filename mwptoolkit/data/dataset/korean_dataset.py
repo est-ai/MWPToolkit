@@ -625,7 +625,6 @@ def get_token_info(dataset, dp, pos, tokenizer):
         question_list = []
         # question = tokenizer.convert_tokens_to_string(data["question"])
         # q, num_list = transfer_digit_to_num(question)   # input은 변경 가능
-        temp += 1
         try:
             tr = group_sub_tokens(data["question"])
             dpr = dp(sentence_preprocess_dp(data['ques source 2']))
