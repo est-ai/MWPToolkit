@@ -101,8 +101,8 @@ def sheet2json_main(args):
     problem_list = []
     for i in range(1, total_question_length):
         q_dict = {}
-#         mask_question, num_list = transfer_digit_to_str(data[str(i)]['question'])
-        mask_question, num_list = find_quantity(data[str(i)]['question'])
+        mask_question, num_list = transfer_digit_to_str(data[str(i)]['question'])
+#         mask_question, num_list = find_quantity(data[str(i)]['question'])
         q_dict['Question'] = mask_question
         q_dict['Numbers'] = " ".join(num_list)
         q_dict['Answer'] = 1
