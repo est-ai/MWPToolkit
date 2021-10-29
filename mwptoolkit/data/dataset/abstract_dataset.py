@@ -159,31 +159,7 @@ class AbstractDataset(object):
                 it['Question'] = prompting(it, prompt_table, regex)
             for it in self.testset:
                 it['Question'] = prompting(it, prompt_table, regex)
-                
-        if self.pre_mask == MaskSymbol.NUM or self.pre_mask == MaskSymbol.number:
-            for it in self.trainset:
-                question, num_list = num_masking(it['Question'], self.pre_mask, self.mask_grouping)
-                equation = num_masking_const(it['Equation'], self.pre_mask, num_list)
-                
-                it['Question'] = question
-                it['Equation'] = equation
-                it['Numbers'] = ' '.join(num_list)
-            for it in self.validset:
-                question, num_list = num_masking(it['Question'], self.pre_mask, self.mask_grouping)
-                equation = num_masking_const(it['Equation'], self.pre_mask, num_list)
-                
-                it['Question'] = question
-                it['Equation'] = equation
-                it['Numbers'] = ' '.join(num_list)
-            for it in self.testset:
-                question, num_list = num_masking(it['Question'], self.pre_mask, self.mask_grouping)
-                equation = num_masking_const(it['Equation'], self.pre_mask, num_list)
-                
-                it['Question'] = question
-                it['Equation'] = equation
-                it['Numbers'] = ' '.join(num_list)
-        elif self.pre_mask is not None:
-            raise NotImplementedError
+        
 
     def _load_fold_dataset(self):
         """read one fold of dataset from file. 
