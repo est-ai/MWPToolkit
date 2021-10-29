@@ -332,268 +332,308 @@
         ],
         "1-2": [
             {
-                "token": "ETY_1",
+                "token": "유정",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 4,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이의",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_MOD",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##의",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "출석",
-                "token_pos": 2,
+                "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
                 "token": "번호",
-                "token_pos": 3,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
-            },
-            {
-                "token": "##는",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
+                "head": 5,
+                "dep_pos": 3
+            },
+            {
+                "token": "##는",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 5,
+                "dep_pos": 3
             },
             {
                 "token": "NUM_0",
-                "token_pos": 5,
+                "token_pos": 6,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "번이",
-                "token_pos": 6,
-                "pos": "NNBC",
-                "deprel": "VNP",
-                "head": 11,
-                "dep_pos": 6
-            },
-            {
-                "token": "##고",
                 "token_pos": 7,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 11,
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "##고",
+                "token_pos": 8,
+                "pos": "NNBC",
+                "deprel": "VNP",
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "호",
+                "token_pos": 9,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
                 "dep_pos": 6
             },
             {
-                "token": "ETY_2",
-                "token_pos": 8,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 8,
+                "token": "##석",
+                "token_pos": 10,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##의",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "출석",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
                 "dep_pos": 7
             },
             {
-                "token": "이의",
-                "token_pos": 9,
-                "pos": "NR",
-                "deprel": "NP_MOD",
+                "token": "##번",
+                "token_pos": 14,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##호",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##는",
+                "token_pos": 16,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "NUM_1",
+                "token_pos": 17,
+                "pos": "SL",
+                "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": "출석",
-                "token_pos": 10,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##번",
-                "token_pos": 11,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##호",
-                "token_pos": 12,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##는",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "NUM_1",
-                "token_pos": 14,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 11,
-                "dep_pos": 10
-            },
-            {
                 "token": "번",
-                "token_pos": 15,
+                "token_pos": 18,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": "##입니다",
-                "token_pos": 16,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": ".",
-                "token_pos": 17,
+                "token_pos": 20,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 15,
+                "dep_pos": 10
+            },
+            {
+                "token": "유정",
+                "token_pos": 21,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##이",
+                "token_pos": 22,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##와",
+                "token_pos": 23,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "호",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 14,
                 "dep_pos": 12
             },
             {
-                "token": "ETY_1",
-                "token_pos": 18,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##석",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "##이",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "사이",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
                 "head": 14,
                 "dep_pos": 13
             },
             {
-                "token": "이와",
-                "token_pos": 19,
-                "pos": "NR",
-                "deprel": "NP_CNJ",
-                "head": 17,
+                "token": "##에",
+                "token_pos": 28,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "있",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
                 "dep_pos": 14
             },
             {
-                "token": "ETY_2",
-                "token_pos": 20,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##는",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": "학생",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 17,
                 "dep_pos": 15
             },
             {
-                "token": "이",
-                "token_pos": 21,
-                "pos": "NR",
+                "token": "##은",
+                "token_pos": 32,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 17,
+                "dep_pos": 15
+            },
+            {
+                "token": "몇",
+                "token_pos": 33,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 17,
                 "dep_pos": 16
             },
             {
-                "token": "사이",
-                "token_pos": 22,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "##에",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "있",
-                "token_pos": 24,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "##는",
-                "token_pos": 25,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 26,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 19
-            },
-            {
-                "token": "은",
-                "token_pos": 27,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 20
-            },
-            {
-                "token": "몇",
-                "token_pos": 28,
-                "pos": "MM",
-                "deprel": "DP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "명",
-                "token_pos": 29,
+                "token_pos": 34,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##입",
-                "token_pos": 30,
+                "token_pos": 35,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##니까",
-                "token_pos": 31,
+                "token_pos": 36,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "?",
-                "token_pos": 32,
+                "token_pos": 37,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 23
+                "head": 17,
+                "dep_pos": 18
             }
         ],
         "2-2": [
@@ -868,7 +908,7 @@
                 "token_pos": 0,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -876,7 +916,7 @@
                 "token_pos": 1,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -884,328 +924,344 @@
                 "token_pos": 2,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
-                "token": "ETY_0",
+                "token": "가지",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 2
             },
             {
-                "token": "를",
+                "token": "##를",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 3
+                "head": 5,
+                "dep_pos": 2
             },
             {
                 "token": "NUM_0",
                 "token_pos": 5,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "개",
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "땄",
                 "token_pos": 7,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##습",
                 "token_pos": 8,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##니다",
                 "token_pos": 9,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": ".",
                 "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 5,
+                "head": 4,
+                "dep_pos": 6
+            },
+            {
+                "token": "오이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 12,
                 "dep_pos": 7
             },
             {
-                "token": "ETY_2",
-                "token_pos": 11,
-                "pos": "SL",
+                "token": "##는",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 10,
+                "head": 12,
+                "dep_pos": 7
+            },
+            {
+                "token": "가지",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
                 "dep_pos": 8
             },
             {
-                "token": "는",
-                "token_pos": 12,
-                "pos": "ETM",
-                "deprel": "NP_SBJ",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 13,
-                "pos": "SL",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 10
-            },
-            {
-                "token": "보다",
+                "token": "##보",
                 "token_pos": 14,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 11
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
+            },
+            {
+                "token": "##다",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
             },
             {
                 "token": "하나",
-                "token_pos": 15,
+                "token_pos": 16,
                 "pos": "NR",
                 "deprel": "NP_SBJ",
-                "head": 15,
-                "dep_pos": 12
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "더",
-                "token_pos": 16,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 13
-            },
-            {
-                "token": "많이",
                 "token_pos": 17,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "많이",
+                "token_pos": 18,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
             },
             {
                 "token": "따",
-                "token_pos": 18,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
-            },
-            {
-                "token": "##고",
                 "token_pos": 19,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 19,
+                "dep_pos": 12
+            },
+            {
+                "token": "##고",
+                "token_pos": 20,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 19,
+                "dep_pos": 12
             },
             {
                 "token": ",",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SC",
                 "deprel": "X",
+                "head": 19,
+                "dep_pos": 13
+            },
+            {
+                "token": "고추",
+                "token_pos": 22,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "##는",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "가지",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##보",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##다",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "하나",
+                "token_pos": 27,
+                "pos": "NR",
+                "deprel": "NP_SBJ",
                 "head": 19,
                 "dep_pos": 16
             },
             {
-                "token": "ETY_1",
-                "token_pos": 21,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 19,
+                "token": "더",
+                "token_pos": 28,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 18,
                 "dep_pos": 17
             },
             {
-                "token": "는",
-                "token_pos": 22,
-                "pos": "ETM",
-                "deprel": "VP",
+                "token": "적",
+                "token_pos": 29,
+                "pos": "VA",
+                "deprel": "VP_AJT",
                 "head": 19,
                 "dep_pos": 18
             },
             {
-                "token": "ETY_0",
-                "token_pos": 23,
-                "pos": "SL",
+                "token": "##게",
+                "token_pos": 30,
+                "pos": "VA",
+                "deprel": "VP_AJT",
+                "head": 19,
+                "dep_pos": 18
+            },
+            {
+                "token": "땄",
+                "token_pos": 31,
+                "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 19
             },
             {
-                "token": "보다",
-                "token_pos": 24,
-                "pos": "MAG",
-                "deprel": "AP",
+                "token": "##습",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": "##니다",
+                "token_pos": 33,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": ".",
+                "token_pos": 34,
+                "pos": "SF",
+                "deprel": "VP",
                 "head": 24,
                 "dep_pos": 20
             },
             {
-                "token": "하나",
-                "token_pos": 25,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 24,
+                "token": "가장",
+                "token_pos": 35,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 26,
                 "dep_pos": 21
             },
             {
-                "token": "더",
-                "token_pos": 26,
+                "token": "많이",
+                "token_pos": 36,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 22
             },
             {
-                "token": "적",
-                "token_pos": 27,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "##게",
-                "token_pos": 28,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "땄",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##습",
-                "token_pos": 30,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##니다",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": ".",
-                "token_pos": 32,
-                "pos": "SF",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 25
-            },
-            {
-                "token": "가장",
-                "token_pos": 33,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 26
-            },
-            {
-                "token": "많이",
-                "token_pos": 34,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 27
-            },
-            {
                 "token": "딴",
-                "token_pos": 35,
+                "token_pos": 37,
                 "pos": "MM",
                 "deprel": "DP",
-                "head": 29,
-                "dep_pos": 28
+                "head": 24,
+                "dep_pos": 23
             },
             {
                 "token": "채소",
-                "token_pos": 36,
+                "token_pos": 38,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "##의",
-                "token_pos": 37,
+                "token_pos": 39,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "이름",
-                "token_pos": 38,
+                "token_pos": 40,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "##을",
-                "token_pos": 39,
+                "token_pos": 41,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "쓰",
-                "token_pos": 40,
+                "token_pos": 42,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": "##세요",
-                "token_pos": 41,
+                "token_pos": 43,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": ".",
-                "token_pos": 42,
+                "token_pos": 44,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 32
+                "head": 24,
+                "dep_pos": 27
             }
         ],
         "4-2": [
@@ -1970,9 +2026,9 @@
         ],
         "8-2": [
             {
-                "token": "ETY_2",
+                "token": "빵",
                 "token_pos": 0,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 3,
                 "dep_pos": 1
@@ -1994,9 +2050,9 @@
                 "dep_pos": 3
             },
             {
-                "token": "ETY_1",
+                "token": "우유",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 6,
                 "dep_pos": 4
@@ -2014,7 +2070,7 @@
                 "token_pos": 5,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -2022,7 +2078,7 @@
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -2050,204 +2106,212 @@
                 "dep_pos": 8
             },
             {
-                "token": "ETY_0",
+                "token": "학생",
                 "token_pos": 10,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 9
             },
             {
-                "token": "에게",
+                "token": "##에",
                 "token_pos": 11,
-                "pos": "NNP",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
-                "dep_pos": 10
+                "head": 12,
+                "dep_pos": 9
+            },
+            {
+                "token": "##게",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "남",
-                "token_pos": 12,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
-            },
-            {
-                "token": "##김없이",
                 "token_pos": 13,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
+                "head": 12,
+                "dep_pos": 10
             },
             {
-                "token": "똑같이",
+                "token": "##김없이",
                 "token_pos": 14,
                 "pos": "MAG",
                 "deprel": "AP",
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "똑같이",
+                "token_pos": 15,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "나누",
+                "token_pos": 16,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 13,
                 "dep_pos": 12
             },
             {
-                "token": "나누",
-                "token_pos": 15,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
-            },
-            {
                 "token": "##어",
-                "token_pos": 16,
+                "token_pos": 17,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
+                "head": 13,
+                "dep_pos": 12
             },
             {
                 "token": "주려",
-                "token_pos": 17,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
-            },
-            {
-                "token": "##고",
                 "token_pos": 18,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 14,
+                "dep_pos": 13
             },
             {
-                "token": "합니다",
+                "token": "##고",
                 "token_pos": 19,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "합니다",
+                "token_pos": 20,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 21,
+                "dep_pos": 14
             },
             {
                 "token": ".",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 23,
-                "dep_pos": 16
+                "head": 20,
+                "dep_pos": 15
             },
             {
                 "token": "한",
-                "token_pos": 21,
-                "pos": "VV",
+                "token_pos": 22,
+                "pos": "MM",
                 "deprel": "DP",
-                "head": 18,
+                "head": 17,
+                "dep_pos": 16
+            },
+            {
+                "token": "학생",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
                 "dep_pos": 17
             },
             {
-                "token": "ETY_0",
-                "token_pos": 22,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 20,
+                "token": "##이",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
+                "dep_pos": 17
+            },
+            {
+                "token": "우유",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
                 "dep_pos": 18
             },
             {
-                "token": "이",
-                "token_pos": 23,
-                "pos": "NR",
+                "token": "##를",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
+                "dep_pos": 18
+            },
+            {
+                "token": "몇",
+                "token_pos": 27,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 20,
                 "dep_pos": 19
             },
             {
-                "token": "ETY_1",
-                "token_pos": 24,
-                "pos": "SL",
+                "token": "개",
+                "token_pos": 28,
+                "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 24,
+                "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "를",
-                "token_pos": 25,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 24,
+                "token": "받",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
                 "dep_pos": 21
             },
             {
-                "token": "몇",
-                "token_pos": 26,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##을",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
+                "dep_pos": 21
+            },
+            {
+                "token": "수",
+                "token_pos": 31,
+                "pos": "NNB",
+                "deprel": "NP_SBJ",
                 "head": 23,
                 "dep_pos": 22
             },
             {
-                "token": "개",
-                "token_pos": 27,
-                "pos": "NNBC",
-                "deprel": "NP_OBJ",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "받",
-                "token_pos": 28,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "##을",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "수",
-                "token_pos": 30,
-                "pos": "NNB",
-                "deprel": "NP_SBJ",
-                "head": 26,
-                "dep_pos": 25
-            },
-            {
                 "token": "있",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 26
-            },
-            {
-                "token": "##습",
                 "token_pos": 32,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
             },
             {
-                "token": "##니까",
+                "token": "##습",
                 "token_pos": 33,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
+            },
+            {
+                "token": "##니까",
+                "token_pos": 34,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 23
             },
             {
                 "token": "?",
-                "token_pos": 34,
+                "token_pos": 35,
                 "pos": "SF",
                 "deprel": "VP",
                 "head": 1,
-                "dep_pos": 27
+                "dep_pos": 24
             }
         ],
         "9-2": [
@@ -2654,412 +2718,428 @@
         ],
         "10-2": [
             {
-                "token": "ETY_0",
+                "token": "정국",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이가",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_SBJ",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##가",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "마트",
-                "token_pos": 2,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
-            },
-            {
-                "token": "##에",
                 "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
-                "token": "##서",
+                "token": "##에",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "##서",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "계산",
+                "token_pos": 6,
+                "pos": "NNG",
+                "deprel": "VP",
                 "head": 4,
                 "dep_pos": 3
             },
             {
-                "token": "계산",
-                "token_pos": 5,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
                 "token": "##하",
-                "token_pos": 6,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
-                "token": "##려고",
                 "token_pos": 7,
                 "pos": "NNG",
                 "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
+            },
+            {
+                "token": "##려고",
+                "token_pos": 8,
+                "pos": "NNG",
+                "deprel": "VP",
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "합니다",
-                "token_pos": 8,
+                "token_pos": 9,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 5
+                "head": 27,
+                "dep_pos": 4
             },
             {
                 "token": ".",
-                "token_pos": 9,
+                "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 6
+                "head": 7,
+                "dep_pos": 5
             },
             {
                 "token": "(",
-                "token_pos": 10,
+                "token_pos": 11,
                 "pos": "SSO",
+                "deprel": "NP",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "가",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 8,
                 "dep_pos": 7
             },
             {
-                "token": "가",
-                "token_pos": 11,
-                "pos": "NNG",
+                "token": ")",
+                "token_pos": 13,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": ")",
-                "token_pos": 12,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
                 "token": "계산",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
-            },
-            {
-                "token": "##대",
                 "token_pos": 14,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 15,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 16,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
+            },
+            {
+                "token": "##는",
+                "token_pos": 17,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 9
             },
             {
                 "token": "NUM_0",
-                "token_pos": 17,
+                "token_pos": 18,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 12,
-                "dep_pos": 11
+                "head": 11,
+                "dep_pos": 10
             },
             {
                 "token": "명",
-                "token_pos": 18,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "NP",
-                "head": 17,
-                "dep_pos": 12
+                "head": 16,
+                "dep_pos": 11
             },
             {
                 "token": ",",
-                "token_pos": 19,
+                "token_pos": 20,
                 "pos": "SC",
                 "deprel": "X",
-                "head": 17,
-                "dep_pos": 13
+                "head": 16,
+                "dep_pos": 12
             },
             {
                 "token": "(",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SSO",
                 "deprel": "NP",
-                "head": 16,
-                "dep_pos": 14
+                "head": 15,
+                "dep_pos": 13
             },
             {
                 "token": "나",
-                "token_pos": 21,
+                "token_pos": 22,
                 "pos": "NP",
+                "deprel": "NP",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": ")",
+                "token_pos": 23,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 16,
                 "dep_pos": 15
             },
             {
-                "token": ")",
-                "token_pos": 22,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 17,
-                "dep_pos": 16
-            },
-            {
                 "token": "계산",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
-            },
-            {
-                "token": "##대",
                 "token_pos": 24,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 25,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 26,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
+            },
+            {
+                "token": "##는",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 16
             },
             {
                 "token": "NUM_1",
-                "token_pos": 27,
+                "token_pos": 28,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 19,
-                "dep_pos": 18
+                "head": 18,
+                "dep_pos": 17
             },
             {
                 "token": "명이",
-                "token_pos": 28,
+                "token_pos": 29,
                 "pos": "NNBC",
                 "deprel": "NP_SBJ",
-                "head": 21,
-                "dep_pos": 19
+                "head": 20,
+                "dep_pos": 18
             },
             {
                 "token": "줄",
-                "token_pos": 29,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 21,
-                "dep_pos": 20
-            },
-            {
-                "token": "##을",
                 "token_pos": 30,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "##을",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "서",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "서",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "있",
-                "token_pos": 32,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
-            },
-            {
-                "token": "##습",
                 "token_pos": 33,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
             },
             {
-                "token": "##니다",
+                "token": "##습",
                 "token_pos": 34,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
+            },
+            {
+                "token": "##니다",
+                "token_pos": 35,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 27,
+                "dep_pos": 21
             },
             {
                 "token": ".",
-                "token_pos": 35,
+                "token_pos": 36,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 28,
+                "dep_pos": 22
+            },
+            {
+                "token": "정국",
+                "token_pos": 37,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
                 "head": 27,
                 "dep_pos": 23
             },
             {
-                "token": "ETY_0",
-                "token_pos": 36,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##이",
+                "token_pos": 38,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "##가",
+                "token_pos": 39,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "어느",
+                "token_pos": 40,
+                "pos": "MM",
+                "deprel": "DP",
                 "head": 25,
                 "dep_pos": 24
             },
             {
-                "token": "이가",
-                "token_pos": 37,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 29,
+                "token": "계산",
+                "token_pos": 41,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
                 "dep_pos": 25
             },
             {
-                "token": "어느",
-                "token_pos": 38,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##대",
+                "token_pos": 42,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "##에",
+                "token_pos": 43,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "줄",
+                "token_pos": 44,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
                 "head": 27,
                 "dep_pos": 26
             },
             {
-                "token": "계산",
-                "token_pos": 39,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##대",
-                "token_pos": 40,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##에",
-                "token_pos": 41,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "줄",
-                "token_pos": 42,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
-            },
-            {
                 "token": "##을",
-                "token_pos": 43,
+                "token_pos": 45,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
+                "head": 27,
+                "dep_pos": 26
             },
             {
                 "token": "서야",
-                "token_pos": 44,
+                "token_pos": 46,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 29
+                "head": 29,
+                "dep_pos": 27
             },
             {
                 "token": "순서",
-                "token_pos": 45,
+                "token_pos": 47,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "##가",
-                "token_pos": 46,
+                "token_pos": 48,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "빠",
-                "token_pos": 47,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##릅",
-                "token_pos": 48,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##니까",
                 "token_pos": 49,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 29
+            },
+            {
+                "token": "##릅",
+                "token_pos": 50,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
+            },
+            {
+                "token": "##니까",
+                "token_pos": 51,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
             },
             {
                 "token": "?",
-                "token_pos": 50,
+                "token_pos": 52,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 32
+                "head": 1,
+                "dep_pos": 30
             }
         ]
     },
@@ -3396,268 +3476,308 @@
         ],
         "1-1": [
             {
-                "token": "ETY_1",
+                "token": "유정",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 4,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이의",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_MOD",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##의",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "출석",
-                "token_pos": 2,
+                "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
                 "token": "번호",
-                "token_pos": 3,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
-            },
-            {
-                "token": "##는",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
+                "head": 5,
+                "dep_pos": 3
+            },
+            {
+                "token": "##는",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 5,
+                "dep_pos": 3
             },
             {
                 "token": "NUM_0",
-                "token_pos": 5,
+                "token_pos": 6,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "번이",
-                "token_pos": 6,
-                "pos": "NNBC",
-                "deprel": "VNP",
-                "head": 11,
-                "dep_pos": 6
-            },
-            {
-                "token": "##고",
                 "token_pos": 7,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 11,
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "##고",
+                "token_pos": 8,
+                "pos": "NNBC",
+                "deprel": "VNP",
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "호",
+                "token_pos": 9,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
                 "dep_pos": 6
             },
             {
-                "token": "ETY_2",
-                "token_pos": 8,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 8,
+                "token": "##석",
+                "token_pos": 10,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##의",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "출석",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
                 "dep_pos": 7
             },
             {
-                "token": "이의",
-                "token_pos": 9,
-                "pos": "NR",
-                "deprel": "NP_MOD",
+                "token": "##번",
+                "token_pos": 14,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##호",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##는",
+                "token_pos": 16,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "NUM_1",
+                "token_pos": 17,
+                "pos": "SL",
+                "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": "출석",
-                "token_pos": 10,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##번",
-                "token_pos": 11,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##호",
-                "token_pos": 12,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##는",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "NUM_1",
-                "token_pos": 14,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 11,
-                "dep_pos": 10
-            },
-            {
                 "token": "번",
-                "token_pos": 15,
+                "token_pos": 18,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": "##입니다",
-                "token_pos": 16,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": ".",
-                "token_pos": 17,
+                "token_pos": 20,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 15,
+                "dep_pos": 10
+            },
+            {
+                "token": "유정",
+                "token_pos": 21,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##이",
+                "token_pos": 22,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##와",
+                "token_pos": 23,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "호",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 14,
                 "dep_pos": 12
             },
             {
-                "token": "ETY_1",
-                "token_pos": 18,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##석",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "##이",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "사이",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
                 "head": 14,
                 "dep_pos": 13
             },
             {
-                "token": "이와",
-                "token_pos": 19,
-                "pos": "NR",
-                "deprel": "NP_CNJ",
-                "head": 17,
+                "token": "##에",
+                "token_pos": 28,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "있",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
                 "dep_pos": 14
             },
             {
-                "token": "ETY_2",
-                "token_pos": 20,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##는",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": "학생",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 17,
                 "dep_pos": 15
             },
             {
-                "token": "이",
-                "token_pos": 21,
-                "pos": "NR",
+                "token": "##은",
+                "token_pos": 32,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 17,
+                "dep_pos": 15
+            },
+            {
+                "token": "몇",
+                "token_pos": 33,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 17,
                 "dep_pos": 16
             },
             {
-                "token": "사이",
-                "token_pos": 22,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "##에",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "있",
-                "token_pos": 24,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "##는",
-                "token_pos": 25,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 26,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 19
-            },
-            {
-                "token": "은",
-                "token_pos": 27,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 20
-            },
-            {
-                "token": "몇",
-                "token_pos": 28,
-                "pos": "MM",
-                "deprel": "DP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "명",
-                "token_pos": 29,
+                "token_pos": 34,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##입",
-                "token_pos": 30,
+                "token_pos": 35,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##니까",
-                "token_pos": 31,
+                "token_pos": 36,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "?",
-                "token_pos": 32,
+                "token_pos": 37,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 23
+                "head": 17,
+                "dep_pos": 18
             }
         ],
         "2-1": [
@@ -3932,7 +4052,7 @@
                 "token_pos": 0,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -3940,7 +4060,7 @@
                 "token_pos": 1,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -3948,328 +4068,344 @@
                 "token_pos": 2,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
-                "token": "ETY_0",
+                "token": "가지",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 2
             },
             {
-                "token": "를",
+                "token": "##를",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 3
+                "head": 5,
+                "dep_pos": 2
             },
             {
                 "token": "NUM_0",
                 "token_pos": 5,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "개",
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "땄",
                 "token_pos": 7,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##습",
                 "token_pos": 8,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##니다",
                 "token_pos": 9,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": ".",
                 "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 5,
+                "head": 4,
+                "dep_pos": 6
+            },
+            {
+                "token": "오이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 12,
                 "dep_pos": 7
             },
             {
-                "token": "ETY_2",
-                "token_pos": 11,
-                "pos": "SL",
+                "token": "##는",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 10,
+                "head": 12,
+                "dep_pos": 7
+            },
+            {
+                "token": "가지",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
                 "dep_pos": 8
             },
             {
-                "token": "는",
-                "token_pos": 12,
-                "pos": "ETM",
-                "deprel": "NP_SBJ",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 13,
-                "pos": "SL",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 10
-            },
-            {
-                "token": "보다",
+                "token": "##보",
                 "token_pos": 14,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 11
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
+            },
+            {
+                "token": "##다",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
             },
             {
                 "token": "하나",
-                "token_pos": 15,
+                "token_pos": 16,
                 "pos": "NR",
                 "deprel": "NP_SBJ",
-                "head": 15,
-                "dep_pos": 12
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "더",
-                "token_pos": 16,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 13
-            },
-            {
-                "token": "많이",
                 "token_pos": 17,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "많이",
+                "token_pos": 18,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
             },
             {
                 "token": "따",
-                "token_pos": 18,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
-            },
-            {
-                "token": "##고",
                 "token_pos": 19,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 19,
+                "dep_pos": 12
+            },
+            {
+                "token": "##고",
+                "token_pos": 20,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 19,
+                "dep_pos": 12
             },
             {
                 "token": ",",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SC",
                 "deprel": "X",
+                "head": 19,
+                "dep_pos": 13
+            },
+            {
+                "token": "고추",
+                "token_pos": 22,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "##는",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "가지",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##보",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##다",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "하나",
+                "token_pos": 27,
+                "pos": "NR",
+                "deprel": "NP_SBJ",
                 "head": 19,
                 "dep_pos": 16
             },
             {
-                "token": "ETY_1",
-                "token_pos": 21,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 19,
+                "token": "더",
+                "token_pos": 28,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 18,
                 "dep_pos": 17
             },
             {
-                "token": "는",
-                "token_pos": 22,
-                "pos": "ETM",
-                "deprel": "VP",
+                "token": "적",
+                "token_pos": 29,
+                "pos": "VA",
+                "deprel": "VP_AJT",
                 "head": 19,
                 "dep_pos": 18
             },
             {
-                "token": "ETY_0",
-                "token_pos": 23,
-                "pos": "SL",
+                "token": "##게",
+                "token_pos": 30,
+                "pos": "VA",
+                "deprel": "VP_AJT",
+                "head": 19,
+                "dep_pos": 18
+            },
+            {
+                "token": "땄",
+                "token_pos": 31,
+                "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 19
             },
             {
-                "token": "보다",
-                "token_pos": 24,
-                "pos": "MAG",
-                "deprel": "AP",
+                "token": "##습",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": "##니다",
+                "token_pos": 33,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": ".",
+                "token_pos": 34,
+                "pos": "SF",
+                "deprel": "VP",
                 "head": 24,
                 "dep_pos": 20
             },
             {
-                "token": "하나",
-                "token_pos": 25,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 24,
+                "token": "가장",
+                "token_pos": 35,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 26,
                 "dep_pos": 21
             },
             {
-                "token": "더",
-                "token_pos": 26,
+                "token": "많이",
+                "token_pos": 36,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 22
             },
             {
-                "token": "적",
-                "token_pos": 27,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "##게",
-                "token_pos": 28,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "땄",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##습",
-                "token_pos": 30,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##니다",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": ".",
-                "token_pos": 32,
-                "pos": "SF",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 25
-            },
-            {
-                "token": "가장",
-                "token_pos": 33,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 26
-            },
-            {
-                "token": "많이",
-                "token_pos": 34,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 27
-            },
-            {
                 "token": "딴",
-                "token_pos": 35,
+                "token_pos": 37,
                 "pos": "MM",
                 "deprel": "DP",
-                "head": 29,
-                "dep_pos": 28
+                "head": 24,
+                "dep_pos": 23
             },
             {
                 "token": "채소",
-                "token_pos": 36,
+                "token_pos": 38,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "##의",
-                "token_pos": 37,
+                "token_pos": 39,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "이름",
-                "token_pos": 38,
+                "token_pos": 40,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "##을",
-                "token_pos": 39,
+                "token_pos": 41,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "쓰",
-                "token_pos": 40,
+                "token_pos": 42,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": "##세요",
-                "token_pos": 41,
+                "token_pos": 43,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": ".",
-                "token_pos": 42,
+                "token_pos": 44,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 32
+                "head": 24,
+                "dep_pos": 27
             }
         ],
         "4-1": [
@@ -5034,9 +5170,9 @@
         ],
         "8-1": [
             {
-                "token": "ETY_2",
+                "token": "빵",
                 "token_pos": 0,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 3,
                 "dep_pos": 1
@@ -5058,9 +5194,9 @@
                 "dep_pos": 3
             },
             {
-                "token": "ETY_1",
+                "token": "우유",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 6,
                 "dep_pos": 4
@@ -5078,7 +5214,7 @@
                 "token_pos": 5,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -5086,7 +5222,7 @@
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -5114,204 +5250,212 @@
                 "dep_pos": 8
             },
             {
-                "token": "ETY_0",
+                "token": "학생",
                 "token_pos": 10,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 9
             },
             {
-                "token": "에게",
+                "token": "##에",
                 "token_pos": 11,
-                "pos": "NNP",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
-                "dep_pos": 10
+                "head": 12,
+                "dep_pos": 9
+            },
+            {
+                "token": "##게",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "남",
-                "token_pos": 12,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
-            },
-            {
-                "token": "##김없이",
                 "token_pos": 13,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
+                "head": 12,
+                "dep_pos": 10
             },
             {
-                "token": "똑같이",
+                "token": "##김없이",
                 "token_pos": 14,
                 "pos": "MAG",
                 "deprel": "AP",
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "똑같이",
+                "token_pos": 15,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "나누",
+                "token_pos": 16,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 13,
                 "dep_pos": 12
             },
             {
-                "token": "나누",
-                "token_pos": 15,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
-            },
-            {
                 "token": "##어",
-                "token_pos": 16,
+                "token_pos": 17,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
+                "head": 13,
+                "dep_pos": 12
             },
             {
                 "token": "주려",
-                "token_pos": 17,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
-            },
-            {
-                "token": "##고",
                 "token_pos": 18,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 14,
+                "dep_pos": 13
             },
             {
-                "token": "합니다",
+                "token": "##고",
                 "token_pos": 19,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "합니다",
+                "token_pos": 20,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 21,
+                "dep_pos": 14
             },
             {
                 "token": ".",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 23,
-                "dep_pos": 16
+                "head": 20,
+                "dep_pos": 15
             },
             {
                 "token": "한",
-                "token_pos": 21,
-                "pos": "VV",
+                "token_pos": 22,
+                "pos": "MM",
                 "deprel": "DP",
-                "head": 18,
+                "head": 17,
+                "dep_pos": 16
+            },
+            {
+                "token": "학생",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
                 "dep_pos": 17
             },
             {
-                "token": "ETY_0",
-                "token_pos": 22,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 20,
+                "token": "##이",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
+                "dep_pos": 17
+            },
+            {
+                "token": "우유",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
                 "dep_pos": 18
             },
             {
-                "token": "이",
-                "token_pos": 23,
-                "pos": "NR",
+                "token": "##를",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
+                "dep_pos": 18
+            },
+            {
+                "token": "몇",
+                "token_pos": 27,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 20,
                 "dep_pos": 19
             },
             {
-                "token": "ETY_1",
-                "token_pos": 24,
-                "pos": "SL",
+                "token": "개",
+                "token_pos": 28,
+                "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 24,
+                "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "를",
-                "token_pos": 25,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 24,
+                "token": "받",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
                 "dep_pos": 21
             },
             {
-                "token": "몇",
-                "token_pos": 26,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##을",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
+                "dep_pos": 21
+            },
+            {
+                "token": "수",
+                "token_pos": 31,
+                "pos": "NNB",
+                "deprel": "NP_SBJ",
                 "head": 23,
                 "dep_pos": 22
             },
             {
-                "token": "개",
-                "token_pos": 27,
-                "pos": "NNBC",
-                "deprel": "NP_OBJ",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "받",
-                "token_pos": 28,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "##을",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "수",
-                "token_pos": 30,
-                "pos": "NNB",
-                "deprel": "NP_SBJ",
-                "head": 26,
-                "dep_pos": 25
-            },
-            {
                 "token": "있",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 26
-            },
-            {
-                "token": "##습",
                 "token_pos": 32,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
             },
             {
-                "token": "##니까",
+                "token": "##습",
                 "token_pos": 33,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
+            },
+            {
+                "token": "##니까",
+                "token_pos": 34,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 23
             },
             {
                 "token": "?",
-                "token_pos": 34,
+                "token_pos": 35,
                 "pos": "SF",
                 "deprel": "VP",
                 "head": 1,
-                "dep_pos": 27
+                "dep_pos": 24
             }
         ],
         "9-1": [
@@ -5718,412 +5862,428 @@
         ],
         "10-1": [
             {
-                "token": "ETY_0",
+                "token": "정국",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이가",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_SBJ",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##가",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "마트",
-                "token_pos": 2,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
-            },
-            {
-                "token": "##에",
                 "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
-                "token": "##서",
+                "token": "##에",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "##서",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "계산",
+                "token_pos": 6,
+                "pos": "NNG",
+                "deprel": "VP",
                 "head": 4,
                 "dep_pos": 3
             },
             {
-                "token": "계산",
-                "token_pos": 5,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
                 "token": "##하",
-                "token_pos": 6,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
-                "token": "##려고",
                 "token_pos": 7,
                 "pos": "NNG",
                 "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
+            },
+            {
+                "token": "##려고",
+                "token_pos": 8,
+                "pos": "NNG",
+                "deprel": "VP",
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "합니다",
-                "token_pos": 8,
+                "token_pos": 9,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 5
+                "head": 27,
+                "dep_pos": 4
             },
             {
                 "token": ".",
-                "token_pos": 9,
+                "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 6
+                "head": 7,
+                "dep_pos": 5
             },
             {
                 "token": "(",
-                "token_pos": 10,
+                "token_pos": 11,
                 "pos": "SSO",
+                "deprel": "NP",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "가",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 8,
                 "dep_pos": 7
             },
             {
-                "token": "가",
-                "token_pos": 11,
-                "pos": "NNG",
+                "token": ")",
+                "token_pos": 13,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": ")",
-                "token_pos": 12,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
                 "token": "계산",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
-            },
-            {
-                "token": "##대",
                 "token_pos": 14,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 15,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 16,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
+            },
+            {
+                "token": "##는",
+                "token_pos": 17,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 9
             },
             {
                 "token": "NUM_0",
-                "token_pos": 17,
+                "token_pos": 18,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 12,
-                "dep_pos": 11
+                "head": 11,
+                "dep_pos": 10
             },
             {
                 "token": "명",
-                "token_pos": 18,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "NP",
-                "head": 17,
-                "dep_pos": 12
+                "head": 16,
+                "dep_pos": 11
             },
             {
                 "token": ",",
-                "token_pos": 19,
+                "token_pos": 20,
                 "pos": "SC",
                 "deprel": "X",
-                "head": 17,
-                "dep_pos": 13
+                "head": 16,
+                "dep_pos": 12
             },
             {
                 "token": "(",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SSO",
                 "deprel": "NP",
-                "head": 16,
-                "dep_pos": 14
+                "head": 15,
+                "dep_pos": 13
             },
             {
                 "token": "나",
-                "token_pos": 21,
+                "token_pos": 22,
                 "pos": "NP",
+                "deprel": "NP",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": ")",
+                "token_pos": 23,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 16,
                 "dep_pos": 15
             },
             {
-                "token": ")",
-                "token_pos": 22,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 17,
-                "dep_pos": 16
-            },
-            {
                 "token": "계산",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
-            },
-            {
-                "token": "##대",
                 "token_pos": 24,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 25,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 26,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
+            },
+            {
+                "token": "##는",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 16
             },
             {
                 "token": "NUM_1",
-                "token_pos": 27,
+                "token_pos": 28,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 19,
-                "dep_pos": 18
+                "head": 18,
+                "dep_pos": 17
             },
             {
                 "token": "명이",
-                "token_pos": 28,
+                "token_pos": 29,
                 "pos": "NNBC",
                 "deprel": "NP_SBJ",
-                "head": 21,
-                "dep_pos": 19
+                "head": 20,
+                "dep_pos": 18
             },
             {
                 "token": "줄",
-                "token_pos": 29,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 21,
-                "dep_pos": 20
-            },
-            {
-                "token": "##을",
                 "token_pos": 30,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "##을",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "서",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "서",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "있",
-                "token_pos": 32,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
-            },
-            {
-                "token": "##습",
                 "token_pos": 33,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
             },
             {
-                "token": "##니다",
+                "token": "##습",
                 "token_pos": 34,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
+            },
+            {
+                "token": "##니다",
+                "token_pos": 35,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 27,
+                "dep_pos": 21
             },
             {
                 "token": ".",
-                "token_pos": 35,
+                "token_pos": 36,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 28,
+                "dep_pos": 22
+            },
+            {
+                "token": "정국",
+                "token_pos": 37,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
                 "head": 27,
                 "dep_pos": 23
             },
             {
-                "token": "ETY_0",
-                "token_pos": 36,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##이",
+                "token_pos": 38,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "##가",
+                "token_pos": 39,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "어느",
+                "token_pos": 40,
+                "pos": "MM",
+                "deprel": "DP",
                 "head": 25,
                 "dep_pos": 24
             },
             {
-                "token": "이가",
-                "token_pos": 37,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 29,
+                "token": "계산",
+                "token_pos": 41,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
                 "dep_pos": 25
             },
             {
-                "token": "어느",
-                "token_pos": 38,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##대",
+                "token_pos": 42,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "##에",
+                "token_pos": 43,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "줄",
+                "token_pos": 44,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
                 "head": 27,
                 "dep_pos": 26
             },
             {
-                "token": "계산",
-                "token_pos": 39,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##대",
-                "token_pos": 40,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##에",
-                "token_pos": 41,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "줄",
-                "token_pos": 42,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
-            },
-            {
                 "token": "##을",
-                "token_pos": 43,
+                "token_pos": 45,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
+                "head": 27,
+                "dep_pos": 26
             },
             {
                 "token": "서야",
-                "token_pos": 44,
+                "token_pos": 46,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 29
+                "head": 29,
+                "dep_pos": 27
             },
             {
                 "token": "순서",
-                "token_pos": 45,
+                "token_pos": 47,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "##가",
-                "token_pos": 46,
+                "token_pos": 48,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "빠",
-                "token_pos": 47,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##릅",
-                "token_pos": 48,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##니까",
                 "token_pos": 49,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 29
+            },
+            {
+                "token": "##릅",
+                "token_pos": 50,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
+            },
+            {
+                "token": "##니까",
+                "token_pos": 51,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
             },
             {
                 "token": "?",
-                "token_pos": 50,
+                "token_pos": 52,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 32
+                "head": 1,
+                "dep_pos": 30
             }
         ]
     },
@@ -6460,268 +6620,308 @@
         ],
         "1": [
             {
-                "token": "ETY_1",
+                "token": "유정",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 4,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이의",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_MOD",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##의",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_MOD",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "출석",
-                "token_pos": 2,
+                "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
                 "token": "번호",
-                "token_pos": 3,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
-            },
-            {
-                "token": "##는",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 6,
-                "dep_pos": 4
+                "head": 5,
+                "dep_pos": 3
+            },
+            {
+                "token": "##는",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 5,
+                "dep_pos": 3
             },
             {
                 "token": "NUM_0",
-                "token_pos": 5,
+                "token_pos": 6,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "번이",
-                "token_pos": 6,
-                "pos": "NNBC",
-                "deprel": "VNP",
-                "head": 11,
-                "dep_pos": 6
-            },
-            {
-                "token": "##고",
                 "token_pos": 7,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 11,
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "##고",
+                "token_pos": 8,
+                "pos": "NNBC",
+                "deprel": "VNP",
+                "head": 9,
+                "dep_pos": 5
+            },
+            {
+                "token": "호",
+                "token_pos": 9,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
                 "dep_pos": 6
             },
             {
-                "token": "ETY_2",
-                "token_pos": 8,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 8,
+                "token": "##석",
+                "token_pos": 10,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "##의",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_MOD",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "출석",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
                 "dep_pos": 7
             },
             {
-                "token": "이의",
-                "token_pos": 9,
-                "pos": "NR",
-                "deprel": "NP_MOD",
+                "token": "##번",
+                "token_pos": 14,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##호",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "##는",
+                "token_pos": 16,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 9,
+                "dep_pos": 7
+            },
+            {
+                "token": "NUM_1",
+                "token_pos": 17,
+                "pos": "SL",
+                "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": "출석",
-                "token_pos": 10,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##번",
-                "token_pos": 11,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##호",
-                "token_pos": 12,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "##는",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 11,
-                "dep_pos": 9
-            },
-            {
-                "token": "NUM_1",
-                "token_pos": 14,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 11,
-                "dep_pos": 10
-            },
-            {
                 "token": "번",
-                "token_pos": 15,
+                "token_pos": 18,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": "##입니다",
-                "token_pos": 16,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "VNP",
-                "head": 22,
-                "dep_pos": 11
+                "head": 17,
+                "dep_pos": 9
             },
             {
                 "token": ".",
-                "token_pos": 17,
+                "token_pos": 20,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 15,
+                "dep_pos": 10
+            },
+            {
+                "token": "유정",
+                "token_pos": 21,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##이",
+                "token_pos": 22,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "##와",
+                "token_pos": 23,
+                "pos": "NNP",
+                "deprel": "NP_CNJ",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "호",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 14,
                 "dep_pos": 12
             },
             {
-                "token": "ETY_1",
-                "token_pos": 18,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##석",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "##이",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 14,
+                "dep_pos": 12
+            },
+            {
+                "token": "사이",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
                 "head": 14,
                 "dep_pos": 13
             },
             {
-                "token": "이와",
-                "token_pos": 19,
-                "pos": "NR",
-                "deprel": "NP_CNJ",
-                "head": 17,
+                "token": "##에",
+                "token_pos": 28,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "있",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
                 "dep_pos": 14
             },
             {
-                "token": "ETY_2",
-                "token_pos": 20,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##는",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": "학생",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
                 "head": 17,
                 "dep_pos": 15
             },
             {
-                "token": "이",
-                "token_pos": 21,
-                "pos": "NR",
+                "token": "##은",
+                "token_pos": 32,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 17,
+                "dep_pos": 15
+            },
+            {
+                "token": "몇",
+                "token_pos": 33,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 17,
                 "dep_pos": 16
             },
             {
-                "token": "사이",
-                "token_pos": 22,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "##에",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 18,
-                "dep_pos": 17
-            },
-            {
-                "token": "있",
-                "token_pos": 24,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "##는",
-                "token_pos": 25,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 19,
-                "dep_pos": 18
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 26,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 19
-            },
-            {
-                "token": "은",
-                "token_pos": 27,
-                "pos": "NNG",
-                "deprel": "NP_SBJ",
-                "head": 22,
-                "dep_pos": 20
-            },
-            {
-                "token": "몇",
-                "token_pos": 28,
-                "pos": "MM",
-                "deprel": "DP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "명",
-                "token_pos": 29,
+                "token_pos": 34,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##입",
-                "token_pos": 30,
+                "token_pos": 35,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "##니까",
-                "token_pos": 31,
+                "token_pos": 36,
                 "pos": "NNBC",
                 "deprel": "VNP",
                 "head": -1,
-                "dep_pos": 22
+                "dep_pos": 17
             },
             {
                 "token": "?",
-                "token_pos": 32,
+                "token_pos": 37,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 23
+                "head": 17,
+                "dep_pos": 18
             }
         ],
         "2": [
@@ -6996,7 +7196,7 @@
                 "token_pos": 0,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -7004,7 +7204,7 @@
                 "token_pos": 1,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
@@ -7012,328 +7212,344 @@
                 "token_pos": 2,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 1
             },
             {
-                "token": "ETY_0",
+                "token": "가지",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
+                "head": 5,
                 "dep_pos": 2
             },
             {
-                "token": "를",
+                "token": "##를",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 3
+                "head": 5,
+                "dep_pos": 2
             },
             {
                 "token": "NUM_0",
                 "token_pos": 5,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "개",
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 6,
-                "dep_pos": 5
+                "head": 5,
+                "dep_pos": 4
             },
             {
                 "token": "땄",
                 "token_pos": 7,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##습",
                 "token_pos": 8,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": "##니다",
                 "token_pos": 9,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 6
+                "head": 12,
+                "dep_pos": 5
             },
             {
                 "token": ".",
                 "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 5,
+                "head": 4,
+                "dep_pos": 6
+            },
+            {
+                "token": "오이",
+                "token_pos": 11,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 12,
                 "dep_pos": 7
             },
             {
-                "token": "ETY_2",
-                "token_pos": 11,
-                "pos": "SL",
+                "token": "##는",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 10,
+                "head": 12,
+                "dep_pos": 7
+            },
+            {
+                "token": "가지",
+                "token_pos": 13,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
                 "dep_pos": 8
             },
             {
-                "token": "는",
-                "token_pos": 12,
-                "pos": "ETM",
-                "deprel": "NP_SBJ",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
-                "token": "ETY_0",
-                "token_pos": 13,
-                "pos": "SL",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 10
-            },
-            {
-                "token": "보다",
+                "token": "##보",
                 "token_pos": 14,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 11
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
+            },
+            {
+                "token": "##다",
+                "token_pos": 15,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 8
             },
             {
                 "token": "하나",
-                "token_pos": 15,
+                "token_pos": 16,
                 "pos": "NR",
                 "deprel": "NP_SBJ",
-                "head": 15,
-                "dep_pos": 12
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "더",
-                "token_pos": 16,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 15,
-                "dep_pos": 13
-            },
-            {
-                "token": "많이",
                 "token_pos": 17,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "많이",
+                "token_pos": 18,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
             },
             {
                 "token": "따",
-                "token_pos": 18,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
-            },
-            {
-                "token": "##고",
                 "token_pos": 19,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 19,
+                "dep_pos": 12
+            },
+            {
+                "token": "##고",
+                "token_pos": 20,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 19,
+                "dep_pos": 12
             },
             {
                 "token": ",",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SC",
                 "deprel": "X",
+                "head": 19,
+                "dep_pos": 13
+            },
+            {
+                "token": "고추",
+                "token_pos": 22,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "##는",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 19,
+                "dep_pos": 14
+            },
+            {
+                "token": "가지",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##보",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "##다",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 19,
+                "dep_pos": 15
+            },
+            {
+                "token": "하나",
+                "token_pos": 27,
+                "pos": "NR",
+                "deprel": "NP_SBJ",
                 "head": 19,
                 "dep_pos": 16
             },
             {
-                "token": "ETY_1",
-                "token_pos": 21,
-                "pos": "SL",
-                "deprel": "NP_SBJ",
-                "head": 19,
+                "token": "더",
+                "token_pos": 28,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 18,
                 "dep_pos": 17
             },
             {
-                "token": "는",
-                "token_pos": 22,
-                "pos": "ETM",
-                "deprel": "VP",
+                "token": "적",
+                "token_pos": 29,
+                "pos": "VA",
+                "deprel": "VP_AJT",
                 "head": 19,
                 "dep_pos": 18
             },
             {
-                "token": "ETY_0",
-                "token_pos": 23,
-                "pos": "SL",
+                "token": "##게",
+                "token_pos": 30,
+                "pos": "VA",
+                "deprel": "VP_AJT",
+                "head": 19,
+                "dep_pos": 18
+            },
+            {
+                "token": "땄",
+                "token_pos": 31,
+                "pos": "VV",
                 "deprel": "VP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 19
             },
             {
-                "token": "보다",
-                "token_pos": 24,
-                "pos": "MAG",
-                "deprel": "AP",
+                "token": "##습",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": "##니다",
+                "token_pos": 33,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": 26,
+                "dep_pos": 19
+            },
+            {
+                "token": ".",
+                "token_pos": 34,
+                "pos": "SF",
+                "deprel": "VP",
                 "head": 24,
                 "dep_pos": 20
             },
             {
-                "token": "하나",
-                "token_pos": 25,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 24,
+                "token": "가장",
+                "token_pos": 35,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 26,
                 "dep_pos": 21
             },
             {
-                "token": "더",
-                "token_pos": 26,
+                "token": "많이",
+                "token_pos": 36,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 24,
+                "head": 26,
                 "dep_pos": 22
             },
             {
-                "token": "적",
-                "token_pos": 27,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "##게",
-                "token_pos": 28,
-                "pos": "VA",
-                "deprel": "VP_AJT",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "땄",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##습",
-                "token_pos": 30,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": "##니다",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 31,
-                "dep_pos": 24
-            },
-            {
-                "token": ".",
-                "token_pos": 32,
-                "pos": "SF",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 25
-            },
-            {
-                "token": "가장",
-                "token_pos": 33,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 26
-            },
-            {
-                "token": "많이",
-                "token_pos": 34,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 31,
-                "dep_pos": 27
-            },
-            {
                 "token": "딴",
-                "token_pos": 35,
+                "token_pos": 37,
                 "pos": "MM",
                 "deprel": "DP",
-                "head": 29,
-                "dep_pos": 28
+                "head": 24,
+                "dep_pos": 23
             },
             {
                 "token": "채소",
-                "token_pos": 36,
+                "token_pos": 38,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "##의",
-                "token_pos": 37,
+                "token_pos": 39,
                 "pos": "NNG",
                 "deprel": "NP_MOD",
-                "head": 30,
-                "dep_pos": 29
+                "head": 25,
+                "dep_pos": 24
             },
             {
                 "token": "이름",
-                "token_pos": 38,
+                "token_pos": 40,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "##을",
-                "token_pos": 39,
+                "token_pos": 41,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 26,
+                "dep_pos": 25
             },
             {
                 "token": "쓰",
-                "token_pos": 40,
+                "token_pos": 42,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": "##세요",
-                "token_pos": 41,
+                "token_pos": 43,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 26
             },
             {
                 "token": ".",
-                "token_pos": 42,
+                "token_pos": 44,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 1,
-                "dep_pos": 32
+                "head": 24,
+                "dep_pos": 27
             }
         ],
         "4": [
@@ -8098,9 +8314,9 @@
         ],
         "8": [
             {
-                "token": "ETY_2",
+                "token": "빵",
                 "token_pos": 0,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 3,
                 "dep_pos": 1
@@ -8122,9 +8338,9 @@
                 "dep_pos": 3
             },
             {
-                "token": "ETY_1",
+                "token": "우유",
                 "token_pos": 3,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 6,
                 "dep_pos": 4
@@ -8142,7 +8358,7 @@
                 "token_pos": 5,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -8150,7 +8366,7 @@
                 "token_pos": 6,
                 "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 6
             },
             {
@@ -8178,204 +8394,212 @@
                 "dep_pos": 8
             },
             {
-                "token": "ETY_0",
+                "token": "학생",
                 "token_pos": 10,
-                "pos": "SL",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
+                "head": 12,
                 "dep_pos": 9
             },
             {
-                "token": "에게",
+                "token": "##에",
                 "token_pos": 11,
-                "pos": "NNP",
+                "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 13,
-                "dep_pos": 10
+                "head": 12,
+                "dep_pos": 9
+            },
+            {
+                "token": "##게",
+                "token_pos": 12,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 12,
+                "dep_pos": 9
             },
             {
                 "token": "남",
-                "token_pos": 12,
-                "pos": "MAG",
-                "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
-            },
-            {
-                "token": "##김없이",
                 "token_pos": 13,
                 "pos": "MAG",
                 "deprel": "AP",
-                "head": 13,
-                "dep_pos": 11
+                "head": 12,
+                "dep_pos": 10
             },
             {
-                "token": "똑같이",
+                "token": "##김없이",
                 "token_pos": 14,
                 "pos": "MAG",
                 "deprel": "AP",
+                "head": 12,
+                "dep_pos": 10
+            },
+            {
+                "token": "똑같이",
+                "token_pos": 15,
+                "pos": "MAG",
+                "deprel": "AP",
+                "head": 12,
+                "dep_pos": 11
+            },
+            {
+                "token": "나누",
+                "token_pos": 16,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 13,
                 "dep_pos": 12
             },
             {
-                "token": "나누",
-                "token_pos": 15,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
-            },
-            {
                 "token": "##어",
-                "token_pos": 16,
+                "token_pos": 17,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 14,
-                "dep_pos": 13
+                "head": 13,
+                "dep_pos": 12
             },
             {
                 "token": "주려",
-                "token_pos": 17,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
-            },
-            {
-                "token": "##고",
                 "token_pos": 18,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 15,
-                "dep_pos": 14
+                "head": 14,
+                "dep_pos": 13
             },
             {
-                "token": "합니다",
+                "token": "##고",
                 "token_pos": 19,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 24,
-                "dep_pos": 15
+                "head": 14,
+                "dep_pos": 13
+            },
+            {
+                "token": "합니다",
+                "token_pos": 20,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 21,
+                "dep_pos": 14
             },
             {
                 "token": ".",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 23,
-                "dep_pos": 16
+                "head": 20,
+                "dep_pos": 15
             },
             {
                 "token": "한",
-                "token_pos": 21,
-                "pos": "VV",
+                "token_pos": 22,
+                "pos": "MM",
                 "deprel": "DP",
-                "head": 18,
+                "head": 17,
+                "dep_pos": 16
+            },
+            {
+                "token": "학생",
+                "token_pos": 23,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
                 "dep_pos": 17
             },
             {
-                "token": "ETY_0",
-                "token_pos": 22,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 20,
+                "token": "##이",
+                "token_pos": 24,
+                "pos": "NNG",
+                "deprel": "NP_SBJ",
+                "head": 21,
+                "dep_pos": 17
+            },
+            {
+                "token": "우유",
+                "token_pos": 25,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
                 "dep_pos": 18
             },
             {
-                "token": "이",
-                "token_pos": 23,
-                "pos": "NR",
+                "token": "##를",
+                "token_pos": 26,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 21,
+                "dep_pos": 18
+            },
+            {
+                "token": "몇",
+                "token_pos": 27,
+                "pos": "MM",
                 "deprel": "DP",
                 "head": 20,
                 "dep_pos": 19
             },
             {
-                "token": "ETY_1",
-                "token_pos": 24,
-                "pos": "SL",
+                "token": "개",
+                "token_pos": 28,
+                "pos": "NNBC",
                 "deprel": "NP_OBJ",
-                "head": 24,
+                "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "를",
-                "token_pos": 25,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 24,
+                "token": "받",
+                "token_pos": 29,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
                 "dep_pos": 21
             },
             {
-                "token": "몇",
-                "token_pos": 26,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##을",
+                "token_pos": 30,
+                "pos": "VV",
+                "deprel": "VP_MOD",
+                "head": 22,
+                "dep_pos": 21
+            },
+            {
+                "token": "수",
+                "token_pos": 31,
+                "pos": "NNB",
+                "deprel": "NP_SBJ",
                 "head": 23,
                 "dep_pos": 22
             },
             {
-                "token": "개",
-                "token_pos": 27,
-                "pos": "NNBC",
-                "deprel": "NP_OBJ",
-                "head": 24,
-                "dep_pos": 23
-            },
-            {
-                "token": "받",
-                "token_pos": 28,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "##을",
-                "token_pos": 29,
-                "pos": "VV",
-                "deprel": "VP_MOD",
-                "head": 25,
-                "dep_pos": 24
-            },
-            {
-                "token": "수",
-                "token_pos": 30,
-                "pos": "NNB",
-                "deprel": "NP_SBJ",
-                "head": 26,
-                "dep_pos": 25
-            },
-            {
                 "token": "있",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 26
-            },
-            {
-                "token": "##습",
                 "token_pos": 32,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
             },
             {
-                "token": "##니까",
+                "token": "##습",
                 "token_pos": 33,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 26
+                "dep_pos": 23
+            },
+            {
+                "token": "##니까",
+                "token_pos": 34,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 23
             },
             {
                 "token": "?",
-                "token_pos": 34,
+                "token_pos": 35,
                 "pos": "SF",
                 "deprel": "VP",
                 "head": 1,
-                "dep_pos": 27
+                "dep_pos": 24
             }
         ],
         "9": [
@@ -8782,412 +9006,428 @@
         ],
         "10": [
             {
-                "token": "ETY_0",
+                "token": "정국",
                 "token_pos": 0,
-                "pos": "SL",
-                "deprel": "NP",
-                "head": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
                 "dep_pos": 1
             },
             {
-                "token": "이가",
+                "token": "##이",
                 "token_pos": 1,
-                "pos": "NR",
+                "pos": "NNP",
                 "deprel": "NP_SBJ",
-                "head": 4,
-                "dep_pos": 2
+                "head": 3,
+                "dep_pos": 1
+            },
+            {
+                "token": "##가",
+                "token_pos": 2,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 3,
+                "dep_pos": 1
             },
             {
                 "token": "마트",
-                "token_pos": 2,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
-            },
-            {
-                "token": "##에",
                 "token_pos": 3,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 4,
-                "dep_pos": 3
+                "head": 3,
+                "dep_pos": 2
             },
             {
-                "token": "##서",
+                "token": "##에",
                 "token_pos": 4,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "##서",
+                "token_pos": 5,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 3,
+                "dep_pos": 2
+            },
+            {
+                "token": "계산",
+                "token_pos": 6,
+                "pos": "NNG",
+                "deprel": "VP",
                 "head": 4,
                 "dep_pos": 3
             },
             {
-                "token": "계산",
-                "token_pos": 5,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
                 "token": "##하",
-                "token_pos": 6,
-                "pos": "NNG",
-                "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
-            },
-            {
-                "token": "##려고",
                 "token_pos": 7,
                 "pos": "NNG",
                 "deprel": "VP",
-                "head": 5,
-                "dep_pos": 4
+                "head": 4,
+                "dep_pos": 3
+            },
+            {
+                "token": "##려고",
+                "token_pos": 8,
+                "pos": "NNG",
+                "deprel": "VP",
+                "head": 4,
+                "dep_pos": 3
             },
             {
                 "token": "합니다",
-                "token_pos": 8,
+                "token_pos": 9,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 5
+                "head": 27,
+                "dep_pos": 4
             },
             {
                 "token": ".",
-                "token_pos": 9,
+                "token_pos": 10,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 6
+                "head": 7,
+                "dep_pos": 5
             },
             {
                 "token": "(",
-                "token_pos": 10,
+                "token_pos": 11,
                 "pos": "SSO",
+                "deprel": "NP",
+                "head": 7,
+                "dep_pos": 6
+            },
+            {
+                "token": "가",
+                "token_pos": 12,
+                "pos": "NNG",
                 "deprel": "NP",
                 "head": 8,
                 "dep_pos": 7
             },
             {
-                "token": "가",
-                "token_pos": 11,
-                "pos": "NNG",
+                "token": ")",
+                "token_pos": 13,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 9,
                 "dep_pos": 8
             },
             {
-                "token": ")",
-                "token_pos": 12,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 10,
-                "dep_pos": 9
-            },
-            {
                 "token": "계산",
-                "token_pos": 13,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
-            },
-            {
-                "token": "##대",
                 "token_pos": 14,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 15,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 16,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 10
+                "head": 20,
+                "dep_pos": 9
+            },
+            {
+                "token": "##는",
+                "token_pos": 17,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 9
             },
             {
                 "token": "NUM_0",
-                "token_pos": 17,
+                "token_pos": 18,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 12,
-                "dep_pos": 11
+                "head": 11,
+                "dep_pos": 10
             },
             {
                 "token": "명",
-                "token_pos": 18,
+                "token_pos": 19,
                 "pos": "NNBC",
                 "deprel": "NP",
-                "head": 17,
-                "dep_pos": 12
+                "head": 16,
+                "dep_pos": 11
             },
             {
                 "token": ",",
-                "token_pos": 19,
+                "token_pos": 20,
                 "pos": "SC",
                 "deprel": "X",
-                "head": 17,
-                "dep_pos": 13
+                "head": 16,
+                "dep_pos": 12
             },
             {
                 "token": "(",
-                "token_pos": 20,
+                "token_pos": 21,
                 "pos": "SSO",
                 "deprel": "NP",
-                "head": 16,
-                "dep_pos": 14
+                "head": 15,
+                "dep_pos": 13
             },
             {
                 "token": "나",
-                "token_pos": 21,
+                "token_pos": 22,
                 "pos": "NP",
+                "deprel": "NP",
+                "head": 15,
+                "dep_pos": 14
+            },
+            {
+                "token": ")",
+                "token_pos": 23,
+                "pos": "SSC",
                 "deprel": "NP",
                 "head": 16,
                 "dep_pos": 15
             },
             {
-                "token": ")",
-                "token_pos": 22,
-                "pos": "SSC",
-                "deprel": "NP",
-                "head": 17,
-                "dep_pos": 16
-            },
-            {
                 "token": "계산",
-                "token_pos": 23,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
-            },
-            {
-                "token": "##대",
                 "token_pos": 24,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##에",
+                "token": "##대",
                 "token_pos": 25,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
             },
             {
-                "token": "##는",
+                "token": "##에",
                 "token_pos": 26,
                 "pos": "NNG",
                 "deprel": "NP_AJT",
-                "head": 21,
-                "dep_pos": 17
+                "head": 20,
+                "dep_pos": 16
+            },
+            {
+                "token": "##는",
+                "token_pos": 27,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 20,
+                "dep_pos": 16
             },
             {
                 "token": "NUM_1",
-                "token_pos": 27,
+                "token_pos": 28,
                 "pos": "SL",
                 "deprel": "NP",
-                "head": 19,
-                "dep_pos": 18
+                "head": 18,
+                "dep_pos": 17
             },
             {
                 "token": "명이",
-                "token_pos": 28,
+                "token_pos": 29,
                 "pos": "NNBC",
                 "deprel": "NP_SBJ",
-                "head": 21,
-                "dep_pos": 19
+                "head": 20,
+                "dep_pos": 18
             },
             {
                 "token": "줄",
-                "token_pos": 29,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 21,
-                "dep_pos": 20
-            },
-            {
-                "token": "##을",
                 "token_pos": 30,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "##을",
+                "token_pos": 31,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
+                "head": 20,
+                "dep_pos": 19
+            },
+            {
+                "token": "서",
+                "token_pos": 32,
+                "pos": "VV",
+                "deprel": "VP",
                 "head": 21,
                 "dep_pos": 20
             },
             {
-                "token": "서",
-                "token_pos": 31,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": 22,
-                "dep_pos": 21
-            },
-            {
                 "token": "있",
-                "token_pos": 32,
-                "pos": "VX",
-                "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
-            },
-            {
-                "token": "##습",
                 "token_pos": 33,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
             },
             {
-                "token": "##니다",
+                "token": "##습",
                 "token_pos": 34,
                 "pos": "VX",
                 "deprel": "VP",
-                "head": 29,
-                "dep_pos": 22
+                "head": 27,
+                "dep_pos": 21
+            },
+            {
+                "token": "##니다",
+                "token_pos": 35,
+                "pos": "VX",
+                "deprel": "VP",
+                "head": 27,
+                "dep_pos": 21
             },
             {
                 "token": ".",
-                "token_pos": 35,
+                "token_pos": 36,
                 "pos": "SF",
                 "deprel": "VP",
+                "head": 28,
+                "dep_pos": 22
+            },
+            {
+                "token": "정국",
+                "token_pos": 37,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
                 "head": 27,
                 "dep_pos": 23
             },
             {
-                "token": "ETY_0",
-                "token_pos": 36,
-                "pos": "SL",
-                "deprel": "NP",
+                "token": "##이",
+                "token_pos": 38,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "##가",
+                "token_pos": 39,
+                "pos": "NNP",
+                "deprel": "NP_SBJ",
+                "head": 27,
+                "dep_pos": 23
+            },
+            {
+                "token": "어느",
+                "token_pos": 40,
+                "pos": "MM",
+                "deprel": "DP",
                 "head": 25,
                 "dep_pos": 24
             },
             {
-                "token": "이가",
-                "token_pos": 37,
-                "pos": "NR",
-                "deprel": "NP_SBJ",
-                "head": 29,
+                "token": "계산",
+                "token_pos": 41,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
                 "dep_pos": 25
             },
             {
-                "token": "어느",
-                "token_pos": 38,
-                "pos": "MM",
-                "deprel": "DP",
+                "token": "##대",
+                "token_pos": 42,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "##에",
+                "token_pos": 43,
+                "pos": "NNG",
+                "deprel": "NP_AJT",
+                "head": 27,
+                "dep_pos": 25
+            },
+            {
+                "token": "줄",
+                "token_pos": 44,
+                "pos": "NNG",
+                "deprel": "NP_OBJ",
                 "head": 27,
                 "dep_pos": 26
             },
             {
-                "token": "계산",
-                "token_pos": 39,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##대",
-                "token_pos": 40,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "##에",
-                "token_pos": 41,
-                "pos": "NNG",
-                "deprel": "NP_AJT",
-                "head": 29,
-                "dep_pos": 27
-            },
-            {
-                "token": "줄",
-                "token_pos": 42,
-                "pos": "NNG",
-                "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
-            },
-            {
                 "token": "##을",
-                "token_pos": 43,
+                "token_pos": 45,
                 "pos": "NNG",
                 "deprel": "NP_OBJ",
-                "head": 29,
-                "dep_pos": 28
+                "head": 27,
+                "dep_pos": 26
             },
             {
                 "token": "서야",
-                "token_pos": 44,
+                "token_pos": 46,
                 "pos": "VV",
                 "deprel": "VP",
-                "head": 31,
-                "dep_pos": 29
+                "head": 29,
+                "dep_pos": 27
             },
             {
                 "token": "순서",
-                "token_pos": 45,
+                "token_pos": 47,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "##가",
-                "token_pos": 46,
+                "token_pos": 48,
                 "pos": "NNG",
                 "deprel": "NP_SBJ",
-                "head": 31,
-                "dep_pos": 30
+                "head": 29,
+                "dep_pos": 28
             },
             {
                 "token": "빠",
-                "token_pos": 47,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##릅",
-                "token_pos": 48,
-                "pos": "VV",
-                "deprel": "VP",
-                "head": -1,
-                "dep_pos": 31
-            },
-            {
-                "token": "##니까",
                 "token_pos": 49,
                 "pos": "VV",
                 "deprel": "VP",
                 "head": -1,
-                "dep_pos": 31
+                "dep_pos": 29
+            },
+            {
+                "token": "##릅",
+                "token_pos": 50,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
+            },
+            {
+                "token": "##니까",
+                "token_pos": 51,
+                "pos": "VV",
+                "deprel": "VP",
+                "head": -1,
+                "dep_pos": 29
             },
             {
                 "token": "?",
-                "token_pos": 50,
+                "token_pos": 52,
                 "pos": "SF",
                 "deprel": "VP",
-                "head": 2,
-                "dep_pos": 32
+                "head": 1,
+                "dep_pos": 30
             }
         ]
     }
