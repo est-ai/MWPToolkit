@@ -16,6 +16,8 @@ from transformers import RobertaTokenizer,BertTokenizer,AutoTokenizer
 from pororo import Pororo
 import stanza
 import pickle
+from collections import Counter
+
 
 
 from mwptoolkit.data.dataset.abstract_dataset import AbstractDataset
@@ -618,23 +620,23 @@ def deprel_tree_to_file_kor(train_datas, valid_datas, test_datas, tokenizer, par
 
 def get_token_info(dataset, dp, pos, tokenizer):
     questions_info = {}
-    dp_error_cnt = 0
+    c = Counter()
     for data in dataset:
         question_list = []
         # question = tokenizer.convert_tokens_to_string(data["question"])
         # q, num_list = transfer_digit_to_num(question)   # input은 변경 가능
-        if dp_error_cnt >= 50:
-            raise Exception("Dependency Parsing Error")
+        temp += 1
         try:
             tr = group_sub_tokens(data["question"])
             dpr = dp(sentence_preprocess_dp(data['ques source 2']))
             pr = group_pos(pos(data['ques source 1']))
-            a = int('')
-        except ValueError:
+
+        except ValueError as e:
+            c.update([str(e)])
             tr = group_sub_tokens(data["question"])
             pr = group_pos(pos(data['ques source 1']))
             dpr = get_dummy_dp(len(tr))
-            dp_error_cnt += 1
+
             
         #잘못된 데이터 들어오면
         if len(tr) != len(dpr) or len(tr) != len(pr):
@@ -661,7 +663,8 @@ def get_token_info(dataset, dp, pos, tokenizer):
                 question_list.append(question_info)
 
         questions_info[str(data['id'])] = question_list
-
+    if len(c) > 0:
+        raise ValueError("Dependency Parser Value error", c.items())
     return questions_info
 
 
