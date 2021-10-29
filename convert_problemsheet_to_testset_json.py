@@ -94,8 +94,8 @@ def ner_quantity(q, tk):
 # 어떤 소수의 소수점을 오른쪽으로 number0 자리 옮기면 원래보다 number1 만큼 커집니다. 원래의 소수를 구하시오. ['한', '2.7']
 # 어떤 소수의 소수점을 오른쪽으로 number0 자리 옮기면 원래보다 number1 만큼 커집니다. 원래의 소수를 구하시오. ['한', '2.7']
 # number0 개의 수 number1 , number2 , number3 , number4 , number5 이 있습니다. 이 중에서 number6 보다 큰 수는 모두 몇 개입니까? ['5', '1.4', '9/10', '1.1', '0.5', '13/10', '0.9']
-# -
 
+# +
 def sheet2json_main(args):
     data_path = args.data_path
     eval_path = args.eval_path
@@ -108,8 +108,10 @@ def sheet2json_main(args):
     problem_list = []
     for i in range(1, total_question_length):
         q_dict = {}
+
 #         mask_question, num_list = transfer_digit_to_str(data[str(i)]['question'])
         mask_question, num_list = ner_quantity(data[str(i)]['question'], tk)
+
         q_dict['Question'] = mask_question
         q_dict['Numbers'] = " ".join(num_list)
         q_dict['Answer'] = 1
